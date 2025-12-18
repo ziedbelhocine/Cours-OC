@@ -1,0 +1,30 @@
+CREATE TABLE Contrat (
+    Contrat_ID              INTEGER ,
+    No_voie                 INTEGER ,
+    B_T_Q                   VARCHAR (50),
+    Type_de_voie            VARCHAR (50),
+    Voie                    VARCHAR (50),
+    Code_dep_code_commune   INTEGER ,
+    Code_postal             INTEGER ,
+    Surface                 INTEGER ,
+    Type_local              VARCHAR (50),
+    Occupation              VARCHAR (50),
+    Type_contrat            VARCHAR (50),
+    Formule                 VARCHAR (50),
+    Valeur_declaree_biens   VARCHAR (50),
+    Prix_cotisation_mensuel INTEGER,
+    FOREIGN KEY (Code_dep_code_commune) REFERENCES region (Code_dep_code_commune),
+    PRIMARY KEY (Contrat_ID)
+);
+
+CREATE TABLE Region (
+    Code_dep_code_commune INTEGER ,
+    reg_code              INTEGER ,
+    reg_nom               VARCHAR (50),
+    aca_nom               VARCHAR (50),
+    dep_nom               VARCHAR (50),
+    com_nom_maj_court     VARCHAR (50),
+    dep_code              INTEGER ,
+    dep_nom_num           VARCHAR (50),
+    PRIMARY KEY (Code_dep_code_commune)
+);

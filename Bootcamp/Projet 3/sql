@@ -1,0 +1,20 @@
+CREATE VIEW extraction_crm AS
+SELECT 
+    metier, 
+    sexe, 
+    date_naissance,
+    enfant_conduite_accompagne,
+    revenus,
+    usage_vehicule,
+    type_vehicule,
+    points_perdus,
+    age_vehicule,
+    type_conduite,
+    date_demande,
+    etat_dossier,
+    formule,
+    tarif_devis
+    FROM base_client
+WHERE 
+    date_demande LIKE '2022%'
+    AND etat_dossier LIKE 'complet'
