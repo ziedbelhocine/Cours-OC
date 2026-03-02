@@ -25,6 +25,17 @@ ORDER BY nb_ventes DESC;
 
 3. Proportion des ventes d’appartements par le nombre de pièces.
 
+SELECT
+bien.nb_pieces AS nb_pieces,
+ROUND(COUNT(CASE WHEN bien.type_local = 'Appartement' THEN 1 END) *100.00 / COUNT(vente.id), 2) AS proportion_appartements_pourc
+FROM
+vente
+JOIN bien ON vente.id_bien = bien.id
+GROUP BY
+bien.nb_pieces
+ORDER BY
+bien.nb_pieces DESC
+
 SELECT 
   ROUND(appartement.nb_ventes * 100.0 / tous_types.nb_ventes, 2)  AS proportion_appartements_pourc,
   appartement.nb_ventes AS nb_ventes_appartement,
@@ -52,6 +63,16 @@ ORDER BY proportion_appartements_pourc DESC;
 
 4. Liste des 10 départements où le prix du mètre carré est le plus élevé.
 
+SELECT
+ROUND(AVG(vente.valeur/bien.surface_carrez), 2) AS prix_m2,
+departement.nom AS departement
+FROM vente
+JOIN bien ON vente.id_bien = bien.id
+JOIN commune ON bien.code_dep_code_com = commune.code_dep_code_com
+JOIN departement ON commune.id_dep = departement.id
+GROUP BY departement.nom
+ORDER BY prix_m2 DESC LIMIT 10;
+
 SELECT 
 ROUND(SUM(vente.valeur)/ SUM(bien.surface_carrez)) AS prix_m2,
 departement.nom AS departement
@@ -66,6 +87,22 @@ ORDER BY
     prix_m2 DESC LIMIT 10;
 
 5. Prix moyen du mètre carré d’une maison en Île-de-France.
+
+SELECT
+region.nom AS region,
+ROUND(AVG(vente.valeur / bien.surface_carrez), 2) AS prix_moyen_m2_maison
+FROM
+vente
+JOIN bien ON vente.id_bien = bien.id
+JOIN commune ON bien.code_dep_code_com = commune.code_dep_code_com
+JOIN departement ON commune.id_dep = departement.id
+JOIN region ON departement.id_region = region.id
+WHERE
+region.nom = 'Ile-de-France'
+AND bien.type_local = 'Maison'
+AND vente.valeur != ''
+AND bien.surface_carrez != 0
+GROUP BY region.nom;
 
 SELECT 
 region.nom AS region,
@@ -94,6 +131,7 @@ JOIN bien ON vente.id_bien = bien.id
 JOIN commune ON bien.code_dep_code_com = commune.code_dep_code_com
 JOIN departement ON commune.id_dep = departement.id
 JOIN region ON departement.id_region = region.id
+WHERE vente.valeur != ''
 ORDER BY
 valeur DESC LIMIT 10;
 
@@ -101,7 +139,7 @@ valeur DESC LIMIT 10;
 trimestre de 2020.
 
 SELECT 
-  ROUND((deuxieme_trimestre.nb_ventes - premier_trimestre.nb_ventes)*100.0 / premier_trimestre.nb_ventes, 2)  AS taux_evolution_en_pourcent
+ROUND((deuxieme_trimestre.nb_ventes - premier_trimestre.nb_ventes)*100.0 / premier_trimestre.nb_ventes, 2)  AS taux_evolution_en_pourcent
 FROM
   ( SELECT 
         COUNT(vente.id) AS nb_ventes
@@ -117,6 +155,21 @@ FROM
 
 8. Le classement des régions par rapport au prix au mètre carré des
 appartement de plus de 4 pièces.
+
+SELECT 
+region.nom AS region,
+ROUND(AVG(vente.valeur / bien.surface_carrez), 2) AS prix_moyen_m2_appartement
+FROM vente
+JOIN bien ON vente.id_bien = bien.id
+JOIN commune ON bien.code_dep_code_com = commune.code_dep_code_com
+JOIN departement ON commune.id_dep = departement.id
+JOIN region ON departement.id_region = region.id
+WHERE bien.nb_pieces > 4
+AND bien.type_local = 'Appartement'
+AND vente.valeur != ''
+AND bien.surface_carrez != 0
+GROUP BY region.nom
+ORDER BY prix_moyen_m2_appartement DESC;
 
 SELECT 
 region.nom AS region,
@@ -148,27 +201,132 @@ ORDER BY nb_ventes DESC;
 10. Différence en pourcentage du prix au mètre carré entre un
 appartement de 2 pièces et un appartement de 3 pièces.
 
-SELECT 
-  round((t3.prix_moyen - t2.prix_moyen) *100 / t2.prix_moyen, 2)  AS difference_pourcentage
+SELECT
+ROUND(((t3.prix_moyen - t2.prix_moyen) / t2.prix_moyen) * 100, 2) AS difference_pourcentage
 FROM
-  ( SELECT 
-        AVG(vente.valeur) AS prix_moyen 
-        FROM vente 
-        JOIN bien ON vente.id_bien = bien.id
-        WHERE bien.type_local = 'Appartement' 
-        AND bien.nb_pieces = 2 ) 
-    AS t2,
-  ( SELECT 
-        AVG(vente.valeur) AS prix_moyen 
-        FROM vente 
-        JOIN bien ON vente.id_bien = bien.id
-        WHERE bien.type_local = 'Appartement' 
-        AND bien.nb_pieces = 3 ) 
-    AS t3;
+(SELECT
+ROUND(AVG(vente.valeur / bien.surface_carrez), 2) AS prix_moyen
+FROM vente
+JOIN bien ON vente.id_bien = bien.id
+WHERE bien.type_local = 'Appartement'
+AND bien.nb_pieces = 2) AS t2,
+(SELECT
+ROUND(AVG(vente.valeur / bien.surface_carrez), 2) AS prix_moyen
+FROM vente
+JOIN bien ON vente.id_bien = bien.id
+WHERE bien.type_local = 'Appartement'
+AND bien.nb_pieces = 3) AS t3;
 
 
 11. Les moyennes de valeurs foncières pour le top 3 des communes des
 départements 6, 13, 33, 59 et 69.
+
+SELECT
+id,
+departement,
+commune,
+moyenne_valeur
+FROM
+(SELECT
+departement.id AS id,
+departement.nom AS departement,
+commune.nom AS commune,
+ROUND(AVG(valeur), 2) AS moyenne_valeur
+FROM vente
+JOIN bien ON vente.id_bien = bien.id
+JOIN commune ON bien.code_dep_code_com = commune.code_dep_code_com
+JOIN departement ON commune.id_dep = departement.id
+WHERE departement.id = '6'
+GROUP BY departement.id,
+commune.nom
+ORDER BY moyenne_valeur DESC
+LIMIT 3)
+UNION
+SELECT
+id,
+departement,
+commune,
+moyenne_valeur
+FROM
+(SELECT
+departement.id AS id,
+departement.nom AS departement,
+commune.nom AS commune,
+ROUND(AVG(valeur), 2) AS moyenne_valeur
+FROM vente
+JOIN bien ON vente.id_bien = bien.id
+JOIN commune ON bien.code_dep_code_com = commune.code_dep_code_com
+JOIN departement ON commune.id_dep = departement.id
+WHERE departement.id = '13'
+GROUP BY departement.id,
+commune.nom
+ORDER BY moyenne_valeur DESC
+LIMIT 3)
+UNION
+SELECT
+id,
+departement,
+commune,
+moyenne_valeur
+FROM
+(SELECT
+departement.id AS id,
+departement.nom AS departement,
+commune.nom AS commune,
+ROUND(AVG(valeur), 2) AS moyenne_valeur
+FROM vente
+JOIN bien ON vente.id_bien = bien.id
+JOIN commune ON bien.code_dep_code_com = commune.code_dep_code_com
+JOIN departement ON commune.id_dep = departement.id
+WHERE departement.id = '33'
+GROUP BY departement.id,
+commune.nom
+ORDER BY moyenne_valeur DESC
+LIMIT 3)
+UNION
+SELECT
+id,
+departement,
+commune,
+moyenne_valeur
+FROM
+(SELECT
+departement.id AS id,
+departement.nom AS departement,
+commune.nom AS commune,
+ROUND(AVG(valeur), 2) AS moyenne_valeur
+FROM vente
+JOIN bien ON vente.id_bien = bien.id
+JOIN commune ON bien.code_dep_code_com = commune.code_dep_code_com
+JOIN departement ON commune.id_dep = departement.id
+WHERE departement.id = '59'
+GROUP BY departement.id,
+commune.nom
+ORDER BY moyenne_valeur DESC
+LIMIT 3)
+UNION
+SELECT
+id,
+departement,
+commune,
+moyenne_valeur
+FROM
+(SELECT
+departement.id AS id,
+departement.nom AS departement,
+commune.nom AS commune,
+ROUND(AVG(valeur), 2) AS moyenne_valeur
+FROM vente
+JOIN bien ON vente.id_bien = bien.id
+JOIN commune ON bien.code_dep_code_com = commune.code_dep_code_com
+JOIN departement ON commune.id_dep = departement.id
+WHERE departement.id = '69'
+GROUP BY departement.id,
+commune.nom
+ORDER BY moyenne_valeur DESC
+LIMIT 3)
+ORDER BY moyenne_valeur ;
+
 
 WITH classement AS (
     SELECT 
@@ -221,7 +379,7 @@ pour les communes qui dépassent les 10 000 habitants.
 SELECT 
 commune.code_dep_code_com,
 commune.nom as commune,
-ROUND(COUNT(vente.id) / (commune.population/1000), 2) AS transactions_pour_1000_hab
+ROUND(COUNT(vente.id) / (commune.population/1000.00), 2) AS transactions_pour_1000_hab
 FROM vente
 JOIN bien ON vente.id_bien = bien.id
 JOIN commune ON bien.code_dep_code_com = commune.code_dep_code_com
