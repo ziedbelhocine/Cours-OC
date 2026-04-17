@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: marts_age
+    description: "Table finale comparant la répartition par âge des étudiants VS population INSEE par année."
+    columns:
+      - name: year
+        description: "Année de l'analyse (correspond à l'année d'inscription)."
+        data_tests:
+          - not_null
+      - name: age_group
+        description: "Tranche d'âge harmonisée entre les deux sources."
+        data_tests:
+          - not_null
+      - name: delta_pct
+        description: "Écart en points de pourcentage (Étudiants % - INSEE %). Un delta positif signifie une sur-représentation des étudiants."
+        data_tests:
+          - not_null
+
+  - name: marts_gender
+    description: "Comparaison de la répartition par genre entre les étudiants OpenClassrooms et la population INSEE."
+    columns:
+      - name: gender
+        description: "Catégorie de genre (ex: M-students, F-insee, Unknown-students)."
+        data_tests:
+          - not_null
+      - name: year
+        description: "Année d'observation."
+        data_tests:
+          - not_null
+      - name: pct
+        description: "Pourcentage représenté par cette catégorie pour l'année donnée."
+        data_tests:
+          - not_null
+
+  - name: marts_region
+    description: "Comparaison géographique : écart de répartition (Delta) entre les étudiants et l'INSEE par région et par année."
+    columns:
+      - name: year
+        description: "Année de l'analyse."
+        data_tests:
+          - not_null
+      - name: region
+        description: "Région française harmonisée (incluant les DROM regroupés)."
+        data_tests:
+          - not_null
+      - name: delta_pct
+        description: "Écart de point de pourcentage. Si positif, est sur-représentée chez les étudiants."
+        data_tests:
+          - not_null

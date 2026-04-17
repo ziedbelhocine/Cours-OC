@@ -1,0 +1,76 @@
+version: 2
+
+sources:
+  - name: openclassrooms
+    description: "Données brutes pour l'analyse sociodémographique"
+    database: OPC_PROJET8_DBT 
+    schema: raw 
+    tables:
+      - name: students
+        description: "Table contenant tous les étudiants ayant débuté un parcours Data."
+        columns:
+          - name: user_id
+            description: "Identifiant unique de l'étudiant."
+          - name: Path_category_name
+            description: "Catégorie du parcours suivi par lʼétudiant."
+          - name: Age_group
+            description: "Classe dʼâge de lʼétudiant au moment du début du parcours"
+          - name: gender
+            description: "Genre déclaré par lʼétudiant."
+          - name: region
+            description: "Région de résidence de lʼétudiant."
+          - name: year_path_started
+            description: "Année de début du parcours"
+
+      - name: INSEE
+        description: "Table de référence INSEE : population par genre, âge, région et année."
+        columns:
+          - name: Region
+            description: "Region de résidence de la population recensée par l'insee"
+          - name: Gender
+            description: "Genre de résidence de la population recensée par l'insee"
+          - name: Year
+            description: "Année de recensement"
+          - name: age_0_a_4ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 0-4 ans."
+          - name: age_5_a_9ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 5-9 ans."
+          - name: age_10_a_14ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 10-14 ans."
+          - name: age_15_a_19ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 15-19 ans."
+          - name: age_20_a_24ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 20-24 ans."
+          - name: age_25_a_29ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 25-29 ans."
+          - name: age_30_a_34ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 30-34 ans."
+          - name: age_35_a_39ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 35-39 ans."
+          - name: age_40_a_44ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 40-44 ans."
+          - name: age_45_a_49ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 45-49 ans."
+          - name: age_50_a_54ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 50-54 ans."
+          - name: age_55_a_59ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 55-59 ans."
+          - name: age_60_a_64ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 60-64 ans."
+          - name: age_65_a_69ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 65-69 ans."
+          - name: age_70_a_74ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 70-74 ans."
+          - name: age_75_a_79ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 75-79 ans."
+          - name: age_80_a_84ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 80-84 ans."
+          - name: age_85_a_89ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 85-89 ans."
+          - name: age_90_a_94ans
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 90-94 ans."
+          - name: age_95_et_plus
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour la tranche 95 ans et plus."
+          - name: Total
+            description: "Représente le nombre moyen d'individus recensés par l'INSEE pour toutes les tranches d'âge réunies."
+          

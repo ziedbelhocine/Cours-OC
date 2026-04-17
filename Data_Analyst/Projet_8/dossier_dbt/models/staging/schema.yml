@@ -1,0 +1,89 @@
+version: 2
+
+models:
+  - name: stg_students
+    description: Modèle staging de la table students avec des données nettoyées et filtrées.
+    columns:
+      - name: user_id
+        description: Identifiant unique pour chaque étudiant.
+        data_tests:
+          - not_null
+      - name: age_group
+        description: Classe d'age de l'étudiant au départ du parcours
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['30-34 ans', '25-29 ans', '35-39 ans', '55-59 ans', '60 ans ou plus', '50-54 ans', '20-24 ans', '45-49 ans', '40-44 ans']
+          - not_null      
+      - name: gender
+        description: Genre déclaré par l'étudiant.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['M', 'F', 'Unknown']
+      - name: region
+        description: Region de résidence de l'étudiant.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments: 
+                values: ['Nouvelle-Aquitaine', 'Grand Est', 'Hauts-de-France', 'Auvergne-Rhône-Alpes', "Provence-Alpes-Côte d''Azur", 'DROM', 'Centre-Val de Loire', 'Bretagne', 'Bourgogne-Franche-Comté', 'Occitanie', 'Île-de-France', 'Pays de la Loire', 'Normandie']
+
+  - name: stg_insee
+    description: Table nettoyée des données de l'insee pour correspondre aux données fournies par openclassrooms.
+    columns:
+      - name: region
+        description: Region de résidence de la population.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Corse', 'Nouvelle-Aquitaine', 'Grand Est', 'Hauts-de-France', 'Auvergne-Rhône-Alpes', "Provence-Alpes-Côte d''Azur", 'DROM', 'Centre-Val de Loire', 'Bretagne', 'Bourgogne-Franche-Comté', 'Occitanie', 'Île-de-France', 'Pays de la Loire', 'Normandie']
+      - name: Gender
+        description: Genre de la population.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['M', 'F']
+      - name: AGE_20_A_24ANS
+        description: groupe d'age de la population.
+        data_tests:
+          - not_null
+      - name: AGE_25_A_29ANS
+        description: groupe d'age de la population.
+        data_tests:
+          - not_null
+      - name: AGE_30_A_34ANS
+        description: groupe d'age de la population.
+        data_tests:
+          - not_null
+      - name: AGE_35_A_39ANS
+        description: groupe d'age de la population.
+        data_tests:
+          - not_null
+      - name: AGE_40_A_44ANS
+        description: groupe d'age de la population.
+        data_tests:
+          - not_null
+      - name: AGE_45_A_49ANS
+        description: groupe d'age de la population.
+        data_tests:
+          - not_null
+      - name: AGE_50_A_54ANS
+        description: groupe d'age de la population.
+        data_tests:
+          - not_null
+      - name: AGE_55_A_59ANS
+        description: groupe d'age de la population.
+        data_tests:
+          - not_null
+      - name: AGE_60_ET_PLUS
+        description: groupe d'age de la population.
+        data_tests:
+          - not_null
+      - name: Total
+        description: Total de chaque tranche d'âge.
+        data_tests:
+          - not_null                
