@@ -1,0 +1,798 @@
+ID_Client,âge,genre,type de voyage,destination,saison de voyage,durée de voyage (en jours),nombre de personnes,prix total,mode de paiement,évaluation sur 5,date de début de voyage,date de fin de voyage,période de voyage,budget voyage annuel
+1,32,M,culturel,Bali,été,10,2,4425,Virement,3,07-12-2023,09-12-2023,07-12-2023 au 09-12-2023,6407
+2,38,Autre,détente,Népal,printemps,11,1,5743,Carte de crédit,2,01-09-2023,03-09-2023,01-09-2023 au 03-09-2023,4226
+3,39,Autre,détente,Norvège,hiver,15,2,9565,Virement,3,22-02-2024,23-02-2024,22-02-2024 au 23-02-2024,5144
+4,49,Autre,aventure,Japon,printemps,16,2,9833,Virement,2,31-08-2023,03-09-2023,31-08-2023 au 03-09-2023,4307
+5,23,M,aventure,Islande,été,8,4,2358,Paypal,3,29-08-2023,01-09-2023,29-08-2023 au 01-09-2023,4348
+6,32,Autre,aventure,Costa Rica,automne,10,1,4442,Paypal,2,08-03-2024,09-03-2024,08-03-2024 au 09-03-2024,4536
+7,33,Autre,culturel,Népal,hiver,5,4,105,Virement,3,19-05-2023,22-05-2023,19-05-2023 au 22-05-2023,5333
+8,25,M,culturel,Costa Rica,automne,9,1,3173,Paypal,3,24-01-2024,27-01-2024,24-01-2024 au 27-01-2024,4282
+9,53,Autre,culturel,Japon,hiver,6,1,902,Paypal,1,21-03-2023,25-03-2023,21-03-2023 au 25-03-2023,6884
+10,34,M,culturel,Japon,hiver,10,3,4459,Paypal,1,13-06-2023,16-06-2023,13-06-2023 au 16-06-2023,3658
+11,38,F,culturel,Népal,été,8,1,2360,Virement,3,16-05-2023,21-05-2023,16-05-2023 au 21-05-2023,4720
+12,18,Autre,culturel,Islande,été,6,4,904,Paypal,1,14-03-2024,16-03-2024,14-03-2024 au 16-03-2024,4340
+13,36,F,détente,Bali,été,13,2,8065,Paypal,2,20-04-2023,22-04-2023,20-04-2023 au 22-04-2023,7170
+14,21,M,culturel,Népal,hiver,12,1,6925,Carte de crédit,4,25-09-2023,27-09-2023,25-09-2023 au 27-09-2023,5295
+15,20,Autre,aventure,France,automne,8,3,2377,Virement,4,20-01-2024,21-01-2024,20-01-2024 au 21-01-2024,6548
+16,22,M,culturel,Norvège,hiver,5,4,128,Virement,4,15-11-2023,16-11-2023,15-11-2023 au 16-11-2023,2772
+17,34,F,culturel,Bali,automne,13,1,8068,Virement,5,16-05-2023,19-05-2023,16-05-2023 au 19-05-2023,5401
+18,21,M,aventure,France,été,6,4,906,Paypal,2,18-08-2023,23-08-2023,18-08-2023 au 23-08-2023,6334
+19,26,Autre,aventure,Norvège,hiver,14,3,8976,Paypal,3,02-06-2023,03-06-2023,02-06-2023 au 03-06-2023,5123
+20,32,Autre,culturel,Bali,été,14,3,9003,Paypal,2,26-11-2023,28-11-2023,26-11-2023 au 28-11-2023,6598
+21,26,F,culturel,Norvège,printemps,9,4,3175,Carte de crédit,2,20-11-2023,25-11-2023,20-11-2023 au 25-11-2023,4224
+22,45,M,détente,Bali,hiver,8,1,2383,Virement,1,18-01-2024,21-01-2024,18-01-2024 au 21-01-2024,7114
+23,22,Autre,culturel,Islande,printemps,11,2,5747,Carte de crédit,1,14-09-2023,15-09-2023,14-09-2023 au 15-09-2023,8448
+24,40,F,culturel,Bali,hiver,10,3,4462,Virement,2,17-02-2024,20-02-2024,17-02-2024 au 20-02-2024,4456
+25,33,Autre,détente,Bali,été,10,1,4469,Paypal,3,04-11-2023,07-11-2023,04-11-2023 au 07-11-2023,4332
+26,37,Autre,aventure,Bali,hiver,11,1,5805,Carte de crédit,2,26-05-2023,30-05-2023,26-05-2023 au 30-05-2023,7180
+27,44,M,culturel,Népal,automne,10,2,4469,Carte de crédit,3,17-07-2023,22-07-2023,17-07-2023 au 22-07-2023,7369
+28,27,Autre,détente,France,hiver,7,3,1459,Paypal,3,29-03-2023,31-03-2023,29-03-2023 au 31-03-2023,4216
+29,28,M,aventure,Népal,été,5,3,137,Virement,3,15-05-2023,20-05-2023,15-05-2023 au 20-05-2023,4370
+30,37,Autre,détente,Bali,automne,8,1,2387,Virement,2,03-08-2023,04-08-2023,03-08-2023 au 04-08-2023,4577
+31,39,F,culturel,Norvège,hiver,5,1,138,Virement,3,23-01-2024,28-01-2024,23-01-2024 au 28-01-2024,2983
+32,25,Autre,aventure,Japon,hiver,13,2,8071,Carte de crédit,1,01-05-2023,04-05-2023,01-05-2023 au 04-05-2023,3622
+33,38,M,détente,France,hiver,10,2,4476,Carte de crédit,3,05-12-2023,08-12-2023,05-12-2023 au 08-12-2023,3494
+34,29,M,culturel,Bali,printemps,13,3,8081,Carte de crédit,4,16-04-2023,21-04-2023,16-04-2023 au 21-04-2023,3848
+35,49,F,détente,France,hiver,9,4,3177,Carte de crédit,2,15-07-2023,20-07-2023,15-07-2023 au 20-07-2023,4948
+37,49,Autre,détente,Népal,printemps,12,1,6955,Paypal,1,12-08-2023,14-08-2023,12-08-2023 au 14-08-2023,7326
+38,28,F,détente,Japon,printemps,9,3,3224,Carte de crédit,2,27-01-2024,01-02-2024,27-01-2024 au 01-02-2024,3502
+39,30,Autre,détente,Costa Rica,été,10,4,4481,Carte de crédit,3,09-05-2023,13-05-2023,09-05-2023 au 13-05-2023,6476
+40,22,Autre,culturel,Bali,hiver,8,2,2391,Virement,4,31-12-2023,01-01-2024,31-12-2023 au 01-01-2024,4679
+41,32,M,aventure,Népal,hiver,8,4,2399,Paypal,3,09-02-2024,12-02-2024,09-02-2024 au 12-02-2024,4926
+42,25,Autre,aventure,Costa Rica,hiver,8,4,2399,Paypal,3,06-07-2023,11-07-2023,06-07-2023 au 11-07-2023,6012
+43,23,Autre,culturel,Japon,printemps,8,4,2406,Virement,1,06-08-2023,10-08-2023,06-08-2023 au 10-08-2023,3316
+44,45,F,culturel,Costa Rica,été,11,2,5818,Virement,2,05-03-2024,10-03-2024,05-03-2024 au 10-03-2024,5574
+45,47,F,culturel,France,été,10,4,4487,Paypal,3,20-03-2023,23-03-2023,20-03-2023 au 23-03-2023,5250
+46,32,M,aventure,Norvège,été,11,4,5823,Carte de crédit,2,24-10-2023,28-10-2023,24-10-2023 au 28-10-2023,5739
+47,30,Autre,détente,Norvège,automne,7,4,1471,Paypal,4,23-12-2023,25-12-2023,23-12-2023 au 25-12-2023,5434
+48,42,Autre,aventure,Costa Rica,été,9,1,3224,Virement,2,12-06-2023,15-06-2023,12-06-2023 au 15-06-2023,8683
+49,24,Autre,culturel,France,été,12,4,6956,Carte de crédit,2,06-07-2023,07-07-2023,06-07-2023 au 07-07-2023,4043
+50,24,M,culturel,Costa Rica,automne,15,2,9566,Carte de crédit,3,24-08-2023,28-08-2023,24-08-2023 au 28-08-2023,4204
+52,45,F,culturel,Bali,automne,8,4,2409,Virement,3,22-10-2023,26-10-2023,22-10-2023 au 26-10-2023,4167
+53,24,M,culturel,France,été,8,2,2454,Virement,3,06-08-2023,08-08-2023,06-08-2023 au 08-08-2023,4044
+54,26,Autre,aventure,Islande,hiver,14,4,9036,Paypal,2,01-08-2023,05-08-2023,01-08-2023 au 05-08-2023,6784
+55,18,Autre,culturel,France,hiver,5,2,160,Paypal,1,20-07-2023,25-07-2023,20-07-2023 au 25-07-2023,7131
+56,61,M,aventure,Bali,printemps,13,4,8122,Carte de crédit,3,07-05-2023,09-05-2023,07-05-2023 au 09-05-2023,4144
+57,39,Autre,culturel,France,hiver,12,2,6983,Virement,2,19-01-2024,23-01-2024,19-01-2024 au 23-01-2024,3751
+58,18,Autre,aventure,Japon,été,13,4,8122,Carte de crédit,3,08-07-2023,13-07-2023,08-07-2023 au 13-07-2023,5707
+59,18,M,culturel,France,été,16,4,9842,Carte de crédit,2,06-02-2024,11-02-2024,06-02-2024 au 11-02-2024,4172
+60,20,M,culturel,Bali,hiver,10,1,4500,Carte de crédit,4,26-11-2023,28-11-2023,26-11-2023 au 28-11-2023,5949
+61,43,Autre,détente,Bali,été,12,1,6986,Carte de crédit,2,30-06-2023,05-07-2023,30-06-2023 au 05-07-2023,5304
+62,29,Autre,détente,France,hiver,9,4,3231,Virement,1,01-07-2023,05-07-2023,01-07-2023 au 05-07-2023,2726
+63,38,Autre,détente,Népal,printemps,5,4,177,Carte de crédit,3,07-10-2023,10-10-2023,07-10-2023 au 10-10-2023,7321
+64,38,F,culturel,Costa Rica,automne,7,3,1473,Virement,3,15-07-2023,19-07-2023,15-07-2023 au 19-07-2023,7694
+65,41,F,détente,Bali,automne,8,2,2458,Virement,3,03-02-2024,05-02-2024,03-02-2024 au 05-02-2024,4081
+66,39,F,détente,Norvège,été,8,3,2464,Paypal,2,29-04-2023,03-05-2023,29-04-2023 au 03-05-2023,4418
+67,32,M,détente,Norvège,hiver,10,1,4541,Virement,4,01-07-2024,02-07-2024,16-08-2023 au 19-08-2023,5429
+68,50,Autre,détente,Islande,printemps,12,1,6991,Virement,3,09-04-2023,13-04-2023,09-04-2023 au 13-04-2023,5502
+69,28,M,détente,Costa Rica,automne,5,1,186,Virement,2,17-04-2023,19-04-2023,17-04-2023 au 19-04-2023,5988
+70,18,M,aventure,Japon,été,10,1,4542,Virement,2,15-02-2024,18-02-2024,15-02-2024 au 18-02-2024,8015
+71,35,F,détente,Népal,été,6,4,909,Virement,2,04-02-2024,08-02-2024,04-02-2024 au 08-02-2024,4735
+72,56,F,détente,Japon,automne,6,1,910,Paypal,1,13-03-2024,18-03-2024,13-03-2024 au 18-03-2024,3803
+73,38,F,culturel,France,hiver,6,4,933,Paypal,2,30-12-2023,31-12-2023,30-12-2023 au 31-12-2023,2931
+74,33,Autre,culturel,Costa Rica,été,12,4,6994,Carte de crédit,1,12-10-2023,15-10-2023,12-10-2023 au 15-10-2023,3904
+75,24,F,culturel,France,automne,8,1,2467,Paypal,4,21-06-2023,22-06-2023,21-06-2023 au 22-06-2023,4950
+77,47,M,aventure,Costa Rica,hiver,7,2,1496,Paypal,3,12-02-2024,13-02-2024,12-02-2024 au 13-02-2024,4224
+78,41,Autre,détente,Norvège,hiver,9,3,3251,Paypal,3,23-01-2024,27-01-2024,23-01-2024 au 27-01-2024,5336
+79,56,F,aventure,Japon,été,9,1,3252,Carte de crédit,3,04-01-2024,05-01-2024,04-01-2024 au 05-01-2024,4975
+80,23,M,culturel,France,été,11,2,5844,Paypal,3,04-10-2023,05-10-2023,04-10-2023 au 05-10-2023,6783
+81,31,M,culturel,France,hiver,9,2,3256,Virement,1,15-02-2024,19-02-2024,15-02-2024 au 19-02-2024,8790
+82,43,M,culturel,Islande,été,9,3,3266,Virement,4,08-03-2024,13-03-2024,08-03-2024 au 13-03-2024,4204
+83,28,Autre,aventure,France,printemps,8,4,2468,Paypal,1,12-03-2024,13-03-2024,12-03-2024 au 13-03-2024,4266
+84,29,F,aventure,Japon,été,14,1,9073,Paypal,3,04-07-2023,06-07-2023,04-07-2023 au 06-07-2023,6566
+85,39,M,culturel,Bali,été,8,3,2469,Virement,4,09-12-2023,12-12-2023,09-12-2023 au 12-12-2023,6023
+86,21,M,aventure,Costa Rica,printemps,9,1,3275,Virement,3,06-03-2024,07-03-2024,06-03-2024 au 07-03-2024,7770
+87,40,Autre,culturel,Bali,printemps,10,2,4548,Carte de crédit,1,06-04-2023,08-04-2023,06-04-2023 au 08-04-2023,5876
+88,47,Autre,aventure,Norvège,été,8,2,2475,Virement,4,26-03-2023,30-03-2023,26-03-2023 au 30-03-2023,4461
+89,35,Autre,culturel,Islande,hiver,5,4,188,Virement,4,28-03-2023,02-04-2023,28-03-2023 au 02-04-2023,5886
+90,44,F,aventure,France,hiver,5,2,192,Paypal,2,10-10-2023,12-10-2023,10-10-2023 au 12-10-2023,6663
+91,42,Autre,culturel,Islande,automne,9,2,3276,Virement,3,15-11-2023,17-11-2023,15-11-2023 au 17-11-2023,6231
+92,30,M,aventure,Costa Rica,été,10,3,4549,Virement,3,26-05-2023,28-05-2023,26-05-2023 au 28-05-2023,5761
+93,26,F,culturel,Bali,été,9,1,3283,Virement,2,10-02-2024,11-02-2024,10-02-2024 au 11-02-2024,6600
+94,43,M,aventure,France,printemps,10,1,4571,Paypal,1,25-11-2023,29-11-2023,25-11-2023 au 29-11-2023,6754
+95,42,Autre,culturel,Japon,printemps,8,3,2484,Paypal,1,08-06-2023,12-06-2023,08-06-2023 au 12-06-2023,7073
+96,40,Autre,culturel,Bali,hiver,8,4,2500,Virement,4,25-05-2023,26-05-2023,25-05-2023 au 26-05-2023,5973
+97,34,F,détente,Japon,automne,10,1,4586,Paypal,2,02-01-2024,03-01-2024,02-01-2024 au 03-01-2024,4749
+98,33,Autre,aventure,Norvège,printemps,9,2,3287,Carte de crédit,3,28-08-2023,31-08-2023,28-08-2023 au 31-08-2023,5220
+99,37,Autre,détente,France,hiver,5,1,202,Carte de crédit,4,25-11-2023,30-11-2023,25-11-2023 au 30-11-2023,6810
+100,43,F,aventure,Costa Rica,hiver,12,2,7007,Virement,2,01-07-2024,02-07-2024,16-08-2023 au 19-08-2023,3775
+101,21,Autre,détente,Japon,hiver,5,4,240,Virement,2,04-05-2023,06-05-2023,04-05-2023 au 06-05-2023,5553
+102,33,M,aventure,Népal,été,15,3,9574,Virement,2,12-04-2023,14-04-2023,12-04-2023 au 14-04-2023,4410
+103,37,F,culturel,Bali,été,6,1,934,Paypal,2,10-03-2024,12-03-2024,10-03-2024 au 12-03-2024,5043
+104,30,M,aventure,Bali,été,7,3,1576,Carte de crédit,3,15-10-2023,20-10-2023,15-10-2023 au 20-10-2023,6918
+105,46,F,aventure,France,hiver,7,1,1577,Carte de crédit,4,07-09-2023,10-09-2023,07-09-2023 au 10-09-2023,5287
+106,27,M,détente,Norvège,hiver,13,1,8131,Virement,2,23-01-2024,24-01-2024,23-01-2024 au 24-01-2024,5070
+107,42,F,aventure,Costa Rica,printemps,14,2,9075,Virement,5,27-12-2023,01-01-2024,27-12-2023 au 01-01-2024,2960
+108,32,Autre,aventure,Japon,hiver,7,2,1577,Virement,4,03-08-2023,05-08-2023,03-08-2023 au 05-08-2023,6119
+109,33,M,culturel,Népal,été,12,1,7013,Carte de crédit,3,04-10-2023,07-10-2023,04-10-2023 au 07-10-2023,5968
+110,45,Autre,aventure,Bali,printemps,5,4,248,Carte de crédit,2,16-08-2023,19-08-2023,16-08-2023 au 19-08-2023,4538
+110,39,Autre,aventure,Bali,été,12,4,7026,Carte de crédit,2,16-08-2023,19-08-2023,16-08-2023 au 19-08-2023,5329
+110,43,Autre,aventure,Bali,été,13,4,8140,Carte de crédit,4,16-08-2023,19-08-2023,16-08-2023 au 19-08-2023,8245
+111,48,Autre,culturel,Népal,printemps,16,4,9848,Virement,3,16-01-2025,13-02-2025,16-01-2025 au 13-02-2025,5374
+112,47,M,culturel,Népal,automne,12,1,7064,Carte de crédit,3,20-12-2024,22-12-2024,20-12-2024 au 22-12-2024,7366
+113,32,Autre,culturel,Maroc,été,13,4,8147,Virement,2,24-08-2024,12-09-2024,24-08-2024 au 12-09-2024,4857
+114,46,Autre,culturel,Norvège,hiver,10,3,4586,Virement,1,29-09-2024,30-09-2024,29-09-2024 au 30-09-2024,5419
+115,26,F,culturel,Brésil,hiver,6,1,957,Virement,1,11-05-2024,02-06-2024,11-05-2024 au 02-06-2024,5912
+116,27,Autre,culturel,Bali,hiver,10,2,4588,Paypal,2,20-06-2024,28-06-2024,20-06-2024 au 28-06-2024,5280
+117,34,F,aventure,Norvège,printemps,10,3,4603,Virement,1,16-05-2024,11-06-2024,16-05-2024 au 11-06-2024,4330
+118,64,M,culturel,Népal,printemps,8,5,2517,Virement,2,06-03-2025,21-03-2025,06-03-2025 au 21-03-2025,5291
+119,48,Autre,culturel,Norvège,automne,12,1,7066,Virement,4,14-03-2025,15-03-2025,14-03-2025 au 15-03-2025,6610
+120,23,F,aventure,Brésil,été,16,3,9868,Paypal,2,03-10-2024,04-10-2024,03-10-2024 au 04-10-2024,3460
+121,28,Autre,aventure,Australie,hiver,9,4,3288,Virement,1,19-05-2024,16-06-2024,19-05-2024 au 16-06-2024,5199
+122,26,F,détente,Australie,été,11,3,5844,Virement,4,31-01-2025,05-02-2025,31-01-2025 au 05-02-2025,3950
+123,18,M,détente,Brésil,hiver,11,3,5866,Virement,3,10-01-2025,25-01-2025,10-01-2025 au 25-01-2025,6793
+124,56,Autre,aventure,Maroc,automne,9,1,3308,Virement,2,03-12-2024,15-12-2024,03-12-2024 au 15-12-2024,2715
+125,39,Autre,culturel,Brésil,hiver,5,4,252,Carte de crédit,2,24-02-2025,10-03-2025,24-02-2025 au 10-03-2025,4162
+126,31,M,culturel,Bali,printemps,8,5,2520,Carte de crédit,1,07-09-2024,24-09-2024,07-09-2024 au 24-09-2024,5566
+127,43,M,aventure,Norvège,été,7,2,1607,Paypal,1,12-09-2024,07-10-2024,12-09-2024 au 07-10-2024,7348
+128,35,Autre,détente,Népal,hiver,12,3,7069,Paypal,1,15-01-2025,19-01-2025,15-01-2025 au 19-01-2025,4901
+129,33,Autre,aventure,Brésil,hiver,10,5,4620,Virement,3,02-09-2024,11-09-2024,02-09-2024 au 11-09-2024,4167
+130,30,Autre,aventure,Norvège,printemps,11,5,5876,Virement,2,11-06-2024,26-06-2024,11-06-2024 au 26-06-2024,7822
+131,32,Autre,aventure,Australie,hiver,10,2,4623,Paypal,4,10-08-2024,24-08-2024,10-08-2024 au 24-08-2024,2828
+132,39,M,aventure,Japon,automne,10,2,4625,Virement,5,14-09-2024,23-09-2024,14-09-2024 au 23-09-2024,1702
+133,40,M,détente,Maroc,automne,9,3,3314,Carte de crédit,1,28-12-2024,01-01-2025,28-12-2024 au 01-01-2025,5660
+134,36,Autre,culturel,Costa Rica,été,12,4,7076,Virement,3,22-08-2024,07-09-2024,22-08-2024 au 07-09-2024,4247
+135,35,Autre,aventure,Pérou,automne,11,2,5915,Carte de crédit,4,22-02-2025,12-03-2025,22-02-2025 au 12-03-2025,3468
+136,36,Autre,détente,Bali,automne,6,1,965,Paypal,2,07-10-2024,08-10-2024,07-10-2024 au 08-10-2024,6063
+137,32,Autre,culturel,Vietnam,hiver,13,1,8149,Virement,2,07-02-2025,22-02-2025,07-02-2025 au 22-02-2025,5366
+138,26,M,culturel,Bali,automne,6,5,970,Virement,2,21-06-2024,02-07-2024,21-06-2024 au 02-07-2024,4154
+139,46,M,culturel,Bali,automne,15,4,9590,Virement,2,12-06-2024,21-06-2024,12-06-2024 au 21-06-2024,3080
+140,29,F,détente,Islande,hiver,6,2,977,Paypal,1,07-02-2025,11-02-2025,07-02-2025 au 11-02-2025,6309
+141,20,Autre,culturel,Bali,hiver,7,1,1656,Virement,2,09-09-2024,01-10-2024,09-09-2024 au 01-10-2024,5975
+142,36,Autre,aventure,Vietnam,été,6,2,981,Virement,3,24-10-2024,07-11-2024,24-10-2024 au 07-11-2024,4851
+143,28,M,détente,Bali,printemps,9,3,3332,Virement,3,28-08-2024,23-09-2024,28-08-2024 au 23-09-2024,7770
+144,18,M,culturel,Bali,été,12,2,7081,Virement,4,02-02-2025,23-02-2025,02-02-2025 au 23-02-2025,3395
+145,47,F,détente,Pérou,printemps,18,2,9959,Virement,5,25-10-2024,12-11-2024,25-10-2024 au 12-11-2024,2712
+146,36,Autre,culturel,Pérou,hiver,9,5,3349,Virement,3,15-08-2024,17-08-2024,15-08-2024 au 17-08-2024,3962
+147,18,Autre,culturel,Australie,été,7,4,1679,Virement,1,23-02-2025,24-03-2025,23-02-2025 au 24-03-2025,4932
+148,41,Autre,culturel,Népal,printemps,10,2,4628,Virement,3,20-03-2025,22-03-2025,20-03-2025 au 22-03-2025,5365
+149,19,F,aventure,Australie,été,9,5,3372,Virement,4,03-12-2024,12-12-2024,03-12-2024 au 12-12-2024,4638
+150,29,Autre,culturel,Bali,automne,5,1,267,Virement,2,16-07-2024,24-07-2024,16-07-2024 au 24-07-2024,5528
+151,18,F,culturel,Islande,hiver,6,4,984,Carte de crédit,4,26-08-2024,27-08-2024,26-08-2024 au 27-08-2024,3123
+152,31,Autre,détente,Népal,printemps,11,2,5919,Paypal,2,04-07-2024,24-07-2024,04-07-2024 au 24-07-2024,7166
+153,22,F,culturel,Pérou,été,7,4,1693,Carte de crédit,2,01-07-2024,14-07-2024,01-07-2024 au 14-07-2024,4877
+154,41,Autre,aventure,Brésil,automne,12,5,7129,Virement,2,21-10-2024,06-11-2024,21-10-2024 au 06-11-2024,6676
+155,38,Autre,aventure,Maroc,automne,10,3,4638,Virement,1,28-06-2024,25-07-2024,28-06-2024 au 25-07-2024,5514
+156,56,F,détente,Vietnam,été,8,3,2541,Paypal,4,20-02-2025,08-03-2025,20-02-2025 au 08-03-2025,5685
+157,22,Autre,culturel,France,printemps,9,4,3375,Virement,1,15-02-2025,22-02-2025,15-02-2025 au 22-02-2025,5855
+158,40,Autre,aventure,France,printemps,5,3,308,Carte de crédit,2,23-12-2024,22-01-2025,23-12-2024 au 22-01-2025,5672
+159,41,F,culturel,Bali,automne,15,3,9620,Virement,2,13-10-2024,30-10-2024,13-10-2024 au 30-10-2024,5964
+160,45,Autre,aventure,Australie,hiver,11,1,5928,Paypal,4,15-02-2025,07-03-2025,15-02-2025 au 07-03-2025,6994
+161,25,Autre,détente,Costa Rica,hiver,5,4,338,Paypal,1,05-01-2025,23-01-2025,05-01-2025 au 23-01-2025,5295
+162,22,Autre,culturel,Costa Rica,automne,10,2,4643,Virement,3,16-06-2024,01-07-2024,16-06-2024 au 01-07-2024,6064
+163,21,M,culturel,Norvège,été,10,4,4646,Carte de crédit,1,02-08-2024,13-08-2024,02-08-2024 au 13-08-2024,4865
+164,53,F,culturel,Bali,automne,5,1,344,Carte de crédit,2,07-09-2024,11-09-2024,07-09-2024 au 11-09-2024,7160
+165,26,Autre,détente,Islande,automne,12,1,7130,Carte de crédit,2,11-04-2024,26-04-2024,11-04-2024 au 26-04-2024,3985
+166,49,F,culturel,Pérou,été,7,3,1713,Carte de crédit,2,25-02-2025,23-03-2025,25-02-2025 au 23-03-2025,7701
+167,40,F,culturel,Pérou,printemps,11,5,5940,Carte de crédit,1,18-05-2024,31-05-2024,18-05-2024 au 31-05-2024,4940
+168,48,F,détente,Vietnam,hiver,9,5,3378,Virement,1,11-05-2024,22-05-2024,11-05-2024 au 22-05-2024,2854
+169,18,F,culturel,Costa Rica,hiver,13,2,8151,Virement,3,08-07-2024,15-07-2024,08-07-2024 au 15-07-2024,5192
+170,43,Autre,aventure,Népal,été,12,1,7145,Paypal,3,30-01-2025,01-02-2025,30-01-2025 au 01-02-2025,3978
+171,29,F,culturel,Brésil,été,8,1,2548,Virement,1,23-08-2024,18-09-2024,23-08-2024 au 18-09-2024,6261
+172,29,M,aventure,Norvège,automne,13,4,8155,Virement,2,08-09-2024,19-09-2024,08-09-2024 au 19-09-2024,4021
+173,34,F,détente,Brésil,hiver,10,1,4656,Carte de crédit,2,17-08-2024,09-09-2024,17-08-2024 au 09-09-2024,4331
+174,30,F,détente,Pérou,été,7,2,1715,Carte de crédit,1,24-02-2025,02-03-2025,24-02-2025 au 02-03-2025,2166
+175,34,Autre,aventure,Brésil,hiver,5,1,387,Carte de crédit,2,23-01-2025,12-02-2025,23-01-2025 au 12-02-2025,4322
+176,45,F,culturel,Pérou,hiver,9,1,3389,Carte de crédit,3,21-11-2024,13-12-2024,21-11-2024 au 13-12-2024,1364
+177,34,M,culturel,Népal,automne,12,4,7171,Virement,1,12-01-2025,18-01-2025,12-01-2025 au 18-01-2025,2624
+178,20,F,culturel,Bali,automne,14,3,9082,Virement,2,21-06-2024,21-07-2024,21-06-2024 au 21-07-2024,6141
+179,26,M,culturel,Australie,hiver,5,5,397,Virement,3,30-03-2024,19-04-2024,30-03-2024 au 19-04-2024,6179
+180,28,F,culturel,Pérou,hiver,13,1,8175,Virement,2,05-02-2025,22-02-2025,05-02-2025 au 22-02-2025,5638
+181,33,M,culturel,Norvège,hiver,6,5,1010,Paypal,3,13-11-2024,23-11-2024,13-11-2024 au 23-11-2024,3550
+182,50,F,aventure,France,printemps,16,1,9875,Virement,2,27-02-2025,22-03-2025,27-02-2025 au 22-03-2025,4928
+183,24,F,aventure,Japon,été,8,4,2553,Virement,2,09-07-2024,13-07-2024,09-07-2024 au 13-07-2024,4995
+184,44,Autre,culturel,Bali,été,8,2,2555,Carte de crédit,3,27-08-2024,01-09-2024,27-08-2024 au 01-09-2024,3262
+185,19,Autre,aventure,Népal,hiver,7,4,1729,Virement,3,01-07-2024,12-07-2024,01-07-2024 au 12-07-2024,7255
+186,32,M,culturel,Bali,été,7,4,1739,Carte de crédit,1,23-11-2024,02-12-2024,23-11-2024 au 02-12-2024,6316
+187,39,F,culturel,Brésil,été,5,5,399,Virement,3,17-01-2025,25-01-2025,17-01-2025 au 25-01-2025,4669
+188,39,F,détente,Vietnam,automne,10,2,4658,Virement,1,24-11-2024,18-12-2024,24-11-2024 au 18-12-2024,5040
+189,25,Autre,aventure,Pérou,été,7,3,1752,Virement,1,21-03-2025,29-03-2025,21-03-2025 au 29-03-2025,5313
+190,38,F,aventure,Népal,hiver,5,5,407,Virement,3,16-12-2024,22-12-2024,16-12-2024 au 22-12-2024,1937
+191,28,Autre,culturel,Costa Rica,automne,11,5,5951,Paypal,3,15-06-2024,25-06-2024,15-06-2024 au 25-06-2024,4629
+192,18,Autre,culturel,Vietnam,automne,6,3,1014,Paypal,4,22-08-2024,29-08-2024,22-08-2024 au 29-08-2024,3977
+193,23,M,culturel,Islande,automne,11,3,5951,Virement,1,24-04-2024,06-05-2024,24-04-2024 au 06-05-2024,3498
+194,29,F,détente,Norvège,printemps,13,3,8216,Paypal,3,13-12-2024,30-12-2024,13-12-2024 au 30-12-2024,4578
+195,49,Autre,détente,Maroc,automne,8,4,2563,Virement,4,21-07-2024,29-07-2024,21-07-2024 au 29-07-2024,7697
+196,20,Autre,culturel,Maroc,été,11,5,5952,Carte de crédit,3,01-10-2024,29-10-2024,01-10-2024 au 29-10-2024,5961
+197,41,F,aventure,Brésil,été,8,4,2579,Virement,2,11-07-2024,17-07-2024,11-07-2024 au 17-07-2024,4143
+198,34,Autre,détente,Vietnam,été,10,1,4664,Paypal,4,02-03-2025,03-03-2025,02-03-2025 au 03-03-2025,5859
+199,29,Autre,aventure,Australie,hiver,6,5,1023,Paypal,4,25-02-2025,19-03-2025,25-02-2025 au 19-03-2025,7099
+200,34,Autre,aventure,Australie,printemps,10,2,4664,Carte de crédit,2,20-01-2025,06-02-2025,20-01-2025 au 06-02-2025,6387
+201,21,Autre,aventure,Pérou,hiver,6,5,1025,Virement,3,17-06-2024,18-06-2024,17-06-2024 au 18-06-2024,5089
+202,28,Autre,détente,Népal,automne,9,2,3417,Carte de crédit,5,01-03-2025,22-03-2025,01-03-2025 au 22-03-2025,4030
+203,24,Autre,aventure,Islande,automne,10,3,4664,Virement,3,20-02-2025,11-03-2025,20-02-2025 au 11-03-2025,6047
+204,44,M,détente,Népal,automne,6,3,1025,Virement,3,24-01-2025,07-02-2025,24-01-2025 au 07-02-2025,5590
+205,30,Autre,culturel,Maroc,été,12,3,7178,Carte de crédit,2,08-03-2025,22-03-2025,08-03-2025 au 22-03-2025,6343
+206,49,M,détente,France,hiver,7,2,1755,Virement,3,27-08-2024,30-08-2024,27-08-2024 au 30-08-2024,5953
+207,29,F,aventure,Brésil,hiver,9,1,3418,Virement,3,04-12-2024,26-12-2024,04-12-2024 au 26-12-2024,6574
+208,36,Autre,culturel,Maroc,été,7,2,1773,Paypal,3,10-07-2024,15-07-2024,10-07-2024 au 15-07-2024,4197
+209,47,Autre,aventure,Vietnam,été,15,4,9649,Virement,1,14-09-2024,22-09-2024,14-09-2024 au 22-09-2024,6976
+210,33,F,aventure,Maroc,automne,5,3,413,Virement,3,11-10-2024,29-10-2024,11-10-2024 au 29-10-2024,5296
+211,44,M,aventure,Brésil,automne,10,1,4664,Paypal,3,27-07-2024,01-08-2024,27-07-2024 au 01-08-2024,8113
+212,26,Autre,détente,Australie,été,5,5,420,Paypal,2,19-07-2024,13-08-2024,19-07-2024 au 13-08-2024,3966
+213,27,M,aventure,Pérou,printemps,13,5,8248,Virement,3,09-05-2024,17-05-2024,09-05-2024 au 17-05-2024,7604
+214,45,M,culturel,Costa Rica,automne,8,5,2580,Carte de crédit,2,13-07-2024,18-07-2024,13-07-2024 au 18-07-2024,5297
+215,28,M,aventure,Vietnam,automne,10,1,4670,Carte de crédit,1,22-09-2024,09-10-2024,22-09-2024 au 09-10-2024,4023
+216,22,F,culturel,Pérou,été,7,5,1776,Virement,5,04-05-2024,08-05-2024,04-05-2024 au 08-05-2024,4274
+217,39,Autre,aventure,Népal,hiver,12,4,7184,Virement,4,13-11-2024,01-12-2024,13-11-2024 au 01-12-2024,4519
+218,18,Autre,aventure,France,hiver,15,3,9652,Virement,3,31-07-2024,30-08-2024,31-07-2024 au 30-08-2024,5636
+219,34,Autre,aventure,France,automne,8,5,2581,Paypal,3,15-06-2024,05-07-2024,15-06-2024 au 05-07-2024,5784
+220,39,F,aventure,Brésil,été,10,2,4671,Paypal,4,08-01-2025,09-01-2025,08-01-2025 au 09-01-2025,4139
+221,36,F,culturel,Bali,hiver,13,2,8266,Carte de crédit,3,14-04-2024,30-04-2024,14-04-2024 au 30-04-2024,4963
+222,42,Autre,culturel,Japon,été,8,2,2611,Virement,3,17-08-2024,20-08-2024,17-08-2024 au 20-08-2024,8213
+223,50,F,culturel,Maroc,été,12,3,7194,Paypal,1,07-01-2025,20-01-2025,07-01-2025 au 20-01-2025,7591
+224,42,Autre,détente,Bali,hiver,11,1,5968,Virement,2,26-02-2025,06-03-2025,26-02-2025 au 06-03-2025,5654
+225,44,Autre,aventure,Maroc,hiver,5,1,423,Virement,3,24-07-2024,18-08-2024,24-07-2024 au 18-08-2024,5057
+226,25,M,aventure,Costa Rica,hiver,12,5,7204,Virement,1,25-01-2025,15-02-2025,25-01-2025 au 15-02-2025,5180
+227,27,Autre,aventure,Norvège,été,9,2,3420,Carte de crédit,3,29-11-2024,23-12-2024,29-11-2024 au 23-12-2024,5920
+228,18,M,culturel,Népal,hiver,11,2,5973,Virement,5,07-06-2024,26-06-2024,07-06-2024 au 26-06-2024,3466
+229,34,Autre,détente,Vietnam,hiver,11,5,5976,Virement,4,19-03-2025,24-03-2025,19-03-2025 au 24-03-2025,4614
+230,33,M,culturel,Costa Rica,été,9,4,3434,Virement,2,04-07-2024,30-07-2024,04-07-2024 au 30-07-2024,2497
+231,40,Autre,culturel,Japon,été,11,4,5987,Virement,2,26-10-2024,07-11-2024,26-10-2024 au 07-11-2024,5599
+232,36,Autre,culturel,France,été,12,1,7210,Virement,2,09-01-2025,06-02-2025,09-01-2025 au 06-02-2025,5971
+233,33,Autre,culturel,Costa Rica,hiver,6,4,1044,Paypal,2,14-05-2024,10-06-2024,14-05-2024 au 10-06-2024,4275
+234,27,F,détente,Japon,été,14,5,9123,Virement,2,28-12-2024,03-01-2025,28-12-2024 au 03-01-2025,7361
+235,43,M,détente,Australie,été,12,5,7216,Virement,2,24-09-2024,24-10-2024,24-09-2024 au 24-10-2024,3161
+236,27,F,aventure,France,hiver,11,4,5988,Carte de crédit,4,25-03-2025,09-04-2025,25-03-2025 au 09-04-2025,2803
+237,44,Autre,détente,Brésil,automne,9,3,3447,Carte de crédit,3,08-10-2024,01-11-2024,08-10-2024 au 01-11-2024,5337
+238,35,M,culturel,France,hiver,10,5,4678,Carte de crédit,2,11-06-2024,29-06-2024,11-06-2024 au 29-06-2024,6571
+239,47,F,détente,Costa Rica,été,7,1,1782,Virement,2,17-09-2024,21-09-2024,17-09-2024 au 21-09-2024,7526
+240,41,F,culturel,Norvège,hiver,14,2,9129,Carte de crédit,3,01-07-2024,04-07-2024,01-07-2024 au 04-07-2024,4312
+241,18,F,détente,Japon,été,11,2,6002,Virement,3,16-06-2024,21-06-2024,16-06-2024 au 21-06-2024,6618
+242,53,Autre,culturel,Maroc,été,16,5,9879,Virement,4,20-05-2024,27-05-2024,20-05-2024 au 27-05-2024,4942
+243,35,Autre,détente,Australie,printemps,9,4,3457,Virement,1,24-10-2024,09-11-2024,24-10-2024 au 09-11-2024,4741
+244,39,M,culturel,Norvège,été,5,3,452,Virement,3,20-09-2024,26-09-2024,20-09-2024 au 26-09-2024,6325
+245,34,F,détente,Australie,automne,16,5,9880,Carte de crédit,1,30-08-2024,14-09-2024,30-08-2024 au 14-09-2024,5978
+246,36,Autre,aventure,France,été,10,3,4688,Virement,3,30-09-2024,21-10-2024,30-09-2024 au 21-10-2024,2635
+247,40,F,détente,Australie,été,6,5,1051,Virement,1,08-02-2025,06-03-2025,08-02-2025 au 06-03-2025,7215
+248,43,M,détente,Norvège,hiver,5,3,463,Carte de crédit,2,07-05-2024,28-05-2024,07-05-2024 au 28-05-2024,7070
+249,20,M,détente,Vietnam,hiver,10,5,4702,Paypal,2,19-02-2025,09-03-2025,19-02-2025 au 09-03-2025,4062
+250,47,Autre,culturel,Pérou,été,13,3,8270,Paypal,2,01-09-2024,28-09-2024,01-09-2024 au 28-09-2024,5594
+251,31,Autre,aventure,Maroc,été,10,4,4735,Paypal,5,03-08-2024,27-08-2024,03-08-2024 au 27-08-2024,5741
+252,22,Autre,culturel,Norvège,hiver,9,1,3514,Carte de crédit,3,08-08-2024,18-08-2024,08-08-2024 au 18-08-2024,5391
+253,45,F,culturel,Norvège,été,9,5,3522,Virement,1,29-01-2025,05-02-2025,29-01-2025 au 05-02-2025,4175
+254,31,Autre,détente,Australie,hiver,10,5,4761,Virement,1,14-04-2024,09-05-2024,14-04-2024 au 09-05-2024,3993
+255,40,F,culturel,France,hiver,7,2,1787,Carte de crédit,1,11-02-2025,17-02-2025,11-02-2025 au 17-02-2025,4962
+256,35,Autre,aventure,Islande,automne,8,3,2622,Carte de crédit,4,26-11-2024,04-12-2024,26-11-2024 au 04-12-2024,6759
+257,38,Autre,aventure,Costa Rica,été,10,3,4768,Carte de crédit,2,29-08-2024,26-09-2024,29-08-2024 au 26-09-2024,5815
+258,18,Autre,détente,Japon,été,9,2,3526,Paypal,2,22-12-2024,21-01-2025,22-12-2024 au 21-01-2025,4444
+259,30,Autre,détente,Népal,hiver,11,2,6019,Carte de crédit,2,19-05-2024,14-06-2024,19-05-2024 au 14-06-2024,6158
+260,41,M,aventure,Australie,été,8,1,2625,Virement,1,30-05-2024,28-06-2024,30-05-2024 au 28-06-2024,727
+261,22,M,culturel,Islande,été,8,4,2628,Paypal,2,20-06-2024,06-07-2024,20-06-2024 au 06-07-2024,6723
+262,60,Autre,détente,Bali,été,13,1,8276,Paypal,1,16-08-2024,10-09-2024,16-08-2024 au 10-09-2024,2390
+263,33,F,détente,Pérou,hiver,10,3,4775,Paypal,3,26-11-2024,13-12-2024,26-11-2024 au 13-12-2024,4456
+264,46,M,aventure,Bali,automne,7,4,1799,Paypal,4,27-12-2024,11-01-2025,27-12-2024 au 11-01-2025,3320
+265,40,M,culturel,Brésil,été,10,2,4776,Virement,2,27-08-2024,16-09-2024,27-08-2024 au 16-09-2024,3058
+266,34,Autre,aventure,Népal,hiver,9,5,3531,Virement,3,28-11-2024,05-12-2024,28-11-2024 au 05-12-2024,6741
+267,55,Autre,détente,Népal,été,10,2,4783,Paypal,3,05-01-2025,02-02-2025,05-01-2025 au 02-02-2025,4298
+268,39,Autre,détente,Norvège,printemps,6,4,1058,Virement,2,29-07-2024,18-08-2024,29-07-2024 au 18-08-2024,5520
+269,37,F,détente,Islande,été,13,2,8287,Virement,3,17-09-2024,17-10-2024,17-09-2024 au 17-10-2024,4930
+270,20,M,aventure,Norvège,été,8,1,2630,Virement,1,02-01-2025,14-01-2025,02-01-2025 au 14-01-2025,5716
+271,23,M,aventure,Népal,printemps,12,4,7217,Virement,3,17-12-2024,22-12-2024,17-12-2024 au 22-12-2024,5115
+272,27,Autre,culturel,Bali,automne,14,3,9172,Virement,1,02-06-2024,12-06-2024,02-06-2024 au 12-06-2024,3076
+273,37,M,culturel,Pérou,automne,9,2,3531,Paypal,3,20-06-2024,26-06-2024,20-06-2024 au 26-06-2024,6494
+274,42,Autre,aventure,Costa Rica,hiver,9,3,3531,Paypal,1,27-04-2024,19-05-2024,27-04-2024 au 19-05-2024,4259
+275,19,Autre,détente,Australie,hiver,6,4,1071,Paypal,3,12-03-2025,09-04-2025,12-03-2025 au 09-04-2025,2665
+276,42,Autre,détente,Népal,printemps,10,4,4785,Paypal,3,17-11-2024,07-12-2024,17-11-2024 au 07-12-2024,4358
+277,31,Autre,aventure,Norvège,hiver,5,5,471,Carte de crédit,4,30-03-2024,15-04-2024,30-03-2024 au 15-04-2024,7251
+278,25,Autre,aventure,Maroc,été,9,3,3537,Carte de crédit,2,02-03-2025,06-03-2025,02-03-2025 au 06-03-2025,6275
+279,42,Autre,aventure,Maroc,été,10,5,4785,Virement,3,15-11-2024,13-12-2024,15-11-2024 au 13-12-2024,4477
+280,33,Autre,détente,Pérou,printemps,15,2,9652,Carte de crédit,3,04-01-2025,05-01-2025,04-01-2025 au 05-01-2025,4476
+281,31,M,aventure,Népal,hiver,11,3,6021,Paypal,4,04-09-2024,27-09-2024,04-09-2024 au 27-09-2024,4518
+282,63,F,détente,France,printemps,9,4,3550,Carte de crédit,4,04-03-2025,17-03-2025,04-03-2025 au 17-03-2025,8115
+283,40,Autre,culturel,Islande,été,9,5,3568,Virement,4,13-09-2024,19-09-2024,13-09-2024 au 19-09-2024,5573
+284,30,Autre,détente,Vietnam,automne,7,2,1829,Virement,2,03-10-2024,28-10-2024,03-10-2024 au 28-10-2024,5645
+285,18,Autre,culturel,Costa Rica,été,12,3,7224,Virement,1,07-01-2025,11-01-2025,07-01-2025 au 11-01-2025,6545
+286,28,Autre,culturel,France,été,12,1,7233,Virement,3,03-02-2025,25-02-2025,03-02-2025 au 25-02-2025,5358
+287,35,Autre,aventure,Japon,automne,11,5,6034,Virement,4,24-01-2025,03-02-2025,24-01-2025 au 03-02-2025,4611
+288,31,M,aventure,Japon,automne,10,4,4800,Virement,3,20-04-2024,08-05-2024,20-04-2024 au 08-05-2024,4705
+289,31,F,culturel,Norvège,printemps,6,2,1083,Paypal,2,21-11-2024,28-11-2024,21-11-2024 au 28-11-2024,4893
+290,35,F,culturel,Japon,hiver,13,2,8295,Paypal,2,15-12-2024,27-12-2024,15-12-2024 au 27-12-2024,4944
+291,18,Autre,détente,Australie,hiver,10,1,4801,Carte de crédit,2,13-10-2024,22-10-2024,13-10-2024 au 22-10-2024,6091
+292,31,Autre,détente,Australie,automne,13,1,8299,Virement,4,20-08-2024,07-09-2024,20-08-2024 au 07-09-2024,5078
+293,50,Autre,détente,France,été,11,4,6042,Carte de crédit,3,10-11-2024,05-12-2024,10-11-2024 au 05-12-2024,6099
+294,25,Autre,culturel,France,hiver,11,1,6051,Carte de crédit,4,09-01-2025,06-02-2025,09-01-2025 au 06-02-2025,4879
+295,37,Autre,aventure,Bali,été,5,2,472,Virement,3,10-03-2025,22-03-2025,10-03-2025 au 22-03-2025,5118
+296,33,F,culturel,France,hiver,9,4,3617,Virement,3,03-09-2024,15-09-2024,03-09-2024 au 15-09-2024,2003
+297,44,Autre,aventure,Maroc,été,16,3,9883,Paypal,3,28-12-2024,06-01-2025,28-12-2024 au 06-01-2025,6374
+298,30,M,aventure,Vietnam,printemps,13,1,8316,Carte de crédit,3,15-10-2024,31-10-2024,15-10-2024 au 31-10-2024,5520
+299,39,M,culturel,Bali,été,9,5,3622,Carte de crédit,2,09-10-2024,02-11-2024,09-10-2024 au 02-11-2024,6497
+300,31,F,culturel,Vietnam,hiver,9,3,3625,Paypal,3,03-09-2024,15-09-2024,03-09-2024 au 15-09-2024,656
+301,46,F,aventure,Brésil,hiver,11,2,6078,Virement,4,14-10-2024,11-11-2024,14-10-2024 au 11-11-2024,8133
+302,38,M,culturel,Japon,été,9,3,3677,Virement,4,20-07-2024,02-08-2024,20-07-2024 au 02-08-2024,4791
+303,41,F,culturel,Pérou,hiver,5,3,482,Virement,4,12-04-2024,30-04-2024,12-04-2024 au 30-04-2024,6662
+304,42,M,culturel,Australie,printemps,9,2,3686,Virement,3,12-10-2024,04-11-2024,12-10-2024 au 04-11-2024,3440
+305,35,Autre,détente,Bali,été,6,1,1092,Paypal,2,25-04-2024,21-05-2024,25-04-2024 au 21-05-2024,5919
+306,21,Autre,culturel,Norvège,printemps,8,1,2642,Virement,1,14-08-2024,13-09-2024,14-08-2024 au 13-09-2024,3420
+307,24,F,aventure,Maroc,automne,12,4,7240,Carte de crédit,2,10-08-2024,17-08-2024,10-08-2024 au 17-08-2024,4064
+308,41,M,aventure,Norvège,hiver,5,2,502,Virement,2,30-11-2024,12-12-2024,30-11-2024 au 12-12-2024,7871
+309,35,F,détente,Costa Rica,hiver,11,4,6080,Virement,2,03-02-2025,11-02-2025,03-02-2025 au 11-02-2025,4714
+310,25,F,aventure,Pérou,hiver,10,1,4811,Carte de crédit,2,25-11-2024,22-12-2024,25-11-2024 au 22-12-2024,5326
+311,46,F,aventure,Bali,été,11,2,6092,Paypal,1,07-01-2025,04-02-2025,07-01-2025 au 04-02-2025,6305
+312,23,Autre,culturel,Pérou,printemps,7,1,1831,Virement,3,29-10-2024,05-11-2024,29-10-2024 au 05-11-2024,5744
+313,42,Autre,détente,Costa Rica,printemps,8,2,2644,Paypal,3,17-11-2024,15-12-2024,17-11-2024 au 15-12-2024,5226
+314,45,Autre,culturel,Pérou,hiver,9,5,3687,Paypal,2,09-03-2025,05-04-2025,09-03-2025 au 05-04-2025,5547
+315,27,Autre,culturel,Népal,été,16,5,9897,Virement,1,09-01-2025,27-01-2025,09-01-2025 au 27-01-2025,8605
+316,26,Autre,détente,Népal,automne,13,4,8420,Paypal,3,13-04-2024,03-05-2024,13-04-2024 au 03-05-2024,4914
+317,33,F,culturel,Islande,hiver,8,4,2652,Virement,3,27-12-2024,14-01-2025,27-12-2024 au 14-01-2025,5302
+318,33,Autre,aventure,Australie,hiver,8,1,2654,Virement,3,24-05-2024,12-06-2024,24-05-2024 au 12-06-2024,6576
+319,21,M,aventure,France,été,7,4,1835,Carte de crédit,2,29-11-2024,18-12-2024,29-11-2024 au 18-12-2024,6658
+320,39,F,aventure,Pérou,automne,6,1,1092,Virement,2,04-09-2024,21-09-2024,04-09-2024 au 21-09-2024,6781
+321,31,Autre,culturel,Vietnam,été,10,1,4820,Paypal,2,04-11-2024,23-11-2024,04-11-2024 au 23-11-2024,5958
+322,33,Autre,culturel,Vietnam,printemps,14,2,9228,Virement,4,08-12-2024,02-01-2025,08-12-2024 au 02-01-2025,3285
+323,22,F,culturel,France,été,16,1,9899,Virement,4,31-03-2024,06-04-2024,31-03-2024 au 06-04-2024,7450
+324,26,Autre,culturel,Norvège,été,7,5,1839,Virement,2,26-11-2024,19-12-2024,26-11-2024 au 19-12-2024,3280
+325,21,F,aventure,Vietnam,été,10,5,4844,Virement,2,23-01-2025,13-02-2025,23-01-2025 au 13-02-2025,5454
+326,23,Autre,culturel,Pérou,automne,5,4,515,Paypal,1,06-05-2024,16-05-2024,06-05-2024 au 16-05-2024,3869
+327,43,F,culturel,Islande,automne,9,4,3691,Virement,3,10-12-2024,21-12-2024,10-12-2024 au 21-12-2024,4904
+328,24,Autre,culturel,Costa Rica,hiver,13,5,8452,Carte de crédit,2,20-05-2024,15-06-2024,20-05-2024 au 15-06-2024,5493
+329,44,Autre,culturel,Australie,été,14,5,9241,Virement,4,12-05-2024,03-06-2024,12-05-2024 au 03-06-2024,5482
+330,31,Autre,culturel,Norvège,automne,13,5,8475,Paypal,3,20-11-2024,20-12-2024,20-11-2024 au 20-12-2024,5633
+331,38,Autre,détente,Vietnam,hiver,5,3,517,Carte de crédit,2,15-08-2024,30-08-2024,15-08-2024 au 30-08-2024,7421
+332,42,F,culturel,Brésil,printemps,5,5,550,Virement,3,04-10-2024,14-10-2024,04-10-2024 au 14-10-2024,5680
+333,36,Autre,culturel,Norvège,hiver,8,2,2665,Virement,2,06-09-2024,19-09-2024,06-09-2024 au 19-09-2024,4634
+334,29,F,aventure,Brésil,été,15,4,9678,Carte de crédit,2,05-12-2024,23-12-2024,05-12-2024 au 23-12-2024,6446
+335,29,Autre,culturel,Pérou,automne,5,2,553,Paypal,2,02-03-2025,23-03-2025,02-03-2025 au 23-03-2025,6784
+336,19,M,culturel,Islande,été,12,4,7268,Virement,3,17-11-2024,14-12-2024,17-11-2024 au 14-12-2024,3159
+337,53,Autre,aventure,Népal,automne,12,3,7293,Paypal,2,29-07-2024,10-08-2024,29-07-2024 au 10-08-2024,5896
+338,39,M,détente,Maroc,hiver,7,5,1858,Paypal,3,22-10-2024,19-11-2024,22-10-2024 au 19-11-2024,6052
+339,18,F,aventure,Vietnam,printemps,7,3,1858,Paypal,3,31-03-2024,24-04-2024,31-03-2024 au 24-04-2024,4554
+340,37,F,culturel,Bali,été,8,2,2668,Virement,4,18-11-2024,08-12-2024,18-11-2024 au 08-12-2024,7064
+341,23,Autre,détente,Norvège,automne,9,1,3697,Paypal,1,15-01-2025,21-01-2025,15-01-2025 au 21-01-2025,4775
+342,36,F,culturel,Australie,hiver,8,1,2680,Paypal,3,14-01-2025,19-01-2025,14-01-2025 au 19-01-2025,5188
+343,28,Autre,détente,Bali,été,10,3,4852,Virement,2,20-08-2024,29-08-2024,20-08-2024 au 29-08-2024,4740
+344,38,M,aventure,Islande,été,12,5,7302,Virement,2,10-08-2024,23-08-2024,10-08-2024 au 23-08-2024,5023
+345,40,Autre,culturel,Pérou,hiver,6,4,1099,Carte de crédit,3,14-08-2024,02-09-2024,14-08-2024 au 02-09-2024,3356
+346,44,M,détente,Bali,été,5,1,555,Virement,2,24-06-2024,12-07-2024,24-06-2024 au 12-07-2024,2840
+347,18,Autre,détente,Costa Rica,été,8,1,2693,Carte de crédit,1,18-02-2025,20-03-2025,18-02-2025 au 20-03-2025,7392
+348,36,Autre,culturel,France,printemps,11,2,6121,Paypal,3,15-04-2024,17-04-2024,15-04-2024 au 17-04-2024,3730
+349,18,Autre,détente,Maroc,été,6,3,1114,Paypal,1,21-07-2024,31-07-2024,21-07-2024 au 31-07-2024,3513
+350,18,Autre,culturel,Costa Rica,été,17,5,9951,Carte de crédit,1,04-08-2024,01-09-2024,04-08-2024 au 01-09-2024,1770
+351,24,Autre,culturel,France,été,7,5,1859,Virement,3,06-02-2025,07-02-2025,06-02-2025 au 07-02-2025,4042
+352,28,M,culturel,Vietnam,été,9,1,3725,Virement,3,26-10-2024,01-11-2024,26-10-2024 au 01-11-2024,3015
+353,25,Autre,culturel,France,été,11,4,6131,Paypal,1,25-01-2025,31-01-2025,25-01-2025 au 31-01-2025,7463
+354,30,F,détente,Japon,printemps,10,1,4863,Paypal,2,09-03-2025,18-03-2025,09-03-2025 au 18-03-2025,6515
+355,31,Autre,aventure,Pérou,été,7,3,1859,Virement,2,21-01-2025,15-02-2025,21-01-2025 au 15-02-2025,3968
+356,33,F,aventure,Pérou,hiver,9,4,3740,Virement,5,01-05-2024,25-05-2024,01-05-2024 au 25-05-2024,8379
+357,55,F,culturel,Norvège,automne,10,3,4869,Virement,4,25-08-2024,13-09-2024,25-08-2024 au 13-09-2024,6473
+358,44,F,aventure,Japon,hiver,8,3,2707,Virement,4,18-11-2024,16-12-2024,18-11-2024 au 16-12-2024,4513
+359,28,Autre,culturel,Costa Rica,été,11,5,6131,Carte de crédit,1,11-12-2024,25-12-2024,11-12-2024 au 25-12-2024,1251
+360,31,Autre,culturel,Vietnam,hiver,13,3,8482,Carte de crédit,1,03-11-2024,22-11-2024,03-11-2024 au 22-11-2024,8436
+361,31,M,culturel,Vietnam,hiver,10,4,4874,Virement,3,16-12-2024,13-01-2025,16-12-2024 au 13-01-2025,2916
+362,36,M,aventure,Islande,hiver,6,5,1117,Virement,3,06-07-2024,28-07-2024,06-07-2024 au 28-07-2024,2532
+363,18,M,culturel,Maroc,été,5,4,582,Paypal,3,17-10-2024,10-11-2024,17-10-2024 au 10-11-2024,6534
+364,42,Autre,culturel,Pérou,automne,13,5,8488,Paypal,2,10-08-2024,13-08-2024,10-08-2024 au 13-08-2024,8660
+365,45,Autre,aventure,Norvège,printemps,10,4,4888,Carte de crédit,1,31-08-2024,25-09-2024,31-08-2024 au 25-09-2024,7076
+366,38,Autre,détente,Vietnam,été,11,5,6176,Virement,4,06-01-2025,01-02-2025,06-01-2025 au 01-02-2025,5846
+367,30,Autre,culturel,Australie,hiver,8,5,2716,Carte de crédit,2,06-06-2024,09-06-2024,06-06-2024 au 09-06-2024,5892
+368,18,Autre,culturel,Maroc,printemps,14,3,9264,Paypal,3,16-11-2024,03-12-2024,16-11-2024 au 03-12-2024,6280
+369,30,Autre,détente,Costa Rica,été,5,4,582,Paypal,4,27-08-2024,05-09-2024,27-08-2024 au 05-09-2024,6138
+370,31,Autre,culturel,Pérou,hiver,7,5,1881,Paypal,2,10-08-2024,13-08-2024,10-08-2024 au 13-08-2024,5422
+371,24,Autre,aventure,Pérou,été,5,3,592,Virement,2,19-07-2024,14-08-2024,19-07-2024 au 14-08-2024,5156
+372,35,M,aventure,Vietnam,hiver,7,4,1892,Virement,2,17-03-2025,06-04-2025,17-03-2025 au 06-04-2025,4906
+373,38,M,détente,Japon,été,6,5,1125,Carte de crédit,3,08-08-2024,09-08-2024,08-08-2024 au 09-08-2024,3869
+374,28,F,culturel,Japon,automne,12,3,7311,Carte de crédit,3,07-06-2024,04-07-2024,07-06-2024 au 04-07-2024,4579
+375,22,Autre,culturel,Costa Rica,été,12,2,7316,Carte de crédit,4,21-07-2024,19-08-2024,21-07-2024 au 19-08-2024,2461
+376,32,Autre,culturel,Pérou,hiver,10,4,4923,Virement,3,24-07-2024,28-07-2024,24-07-2024 au 28-07-2024,4852
+377,39,M,culturel,Pérou,été,5,1,605,Carte de crédit,3,20-06-2024,21-06-2024,20-06-2024 au 21-06-2024,3517
+378,18,Autre,détente,Népal,hiver,14,4,9270,Carte de crédit,1,15-08-2024,14-09-2024,15-08-2024 au 14-09-2024,3345
+379,23,Autre,aventure,France,été,14,4,9289,Virement,3,31-03-2024,19-04-2024,31-03-2024 au 19-04-2024,5270
+380,38,Autre,aventure,Brésil,automne,6,4,1128,Virement,2,05-02-2025,19-02-2025,05-02-2025 au 19-02-2025,7088
+381,54,F,aventure,France,été,9,5,3744,Virement,3,20-09-2024,29-09-2024,20-09-2024 au 29-09-2024,6377
+382,18,M,détente,Népal,automne,10,3,4932,Virement,2,06-04-2024,26-04-2024,06-04-2024 au 26-04-2024,2644
+383,24,Autre,détente,France,hiver,14,4,9311,Virement,3,22-08-2024,13-09-2024,22-08-2024 au 13-09-2024,3516
+384,29,F,détente,Pérou,été,14,3,9315,Virement,3,26-01-2025,08-02-2025,26-01-2025 au 08-02-2025,6411
+385,42,Autre,détente,Pérou,hiver,9,1,3744,Virement,3,18-07-2024,19-07-2024,18-07-2024 au 19-07-2024,3526
+386,29,Autre,culturel,Japon,été,11,4,6207,Virement,4,02-09-2024,08-09-2024,02-09-2024 au 08-09-2024,4663
+387,22,Autre,aventure,Maroc,printemps,11,3,6208,Carte de crédit,1,01-04-2024,21-04-2024,01-04-2024 au 21-04-2024,5825
+388,45,Autre,culturel,Vietnam,été,8,1,2737,Virement,2,05-09-2024,15-09-2024,05-09-2024 au 15-09-2024,3547
+389,29,Autre,aventure,Norvège,printemps,10,1,4947,Virement,3,16-11-2024,24-11-2024,16-11-2024 au 24-11-2024,5158
+390,34,F,détente,France,automne,8,4,2752,Virement,3,09-01-2025,08-02-2025,09-01-2025 au 08-02-2025,2999
+391,30,Autre,culturel,Maroc,automne,6,3,1138,Virement,4,27-03-2025,13-04-2025,27-03-2025 au 13-04-2025,4098
+392,26,M,aventure,Maroc,printemps,7,1,1935,Virement,2,03-02-2025,19-02-2025,03-02-2025 au 19-02-2025,5480
+393,50,Autre,culturel,Islande,été,7,3,1953,Paypal,2,24-02-2025,04-03-2025,24-02-2025 au 04-03-2025,2611
+394,41,Autre,culturel,Brésil,été,5,5,620,Virement,2,13-09-2024,11-10-2024,13-09-2024 au 11-10-2024,5661
+395,39,F,aventure,Bali,été,12,2,7359,Paypal,2,23-09-2024,09-10-2024,23-09-2024 au 09-10-2024,4971
+396,41,F,détente,Brésil,automne,7,1,1960,Carte de crédit,2,27-08-2024,15-09-2024,27-08-2024 au 15-09-2024,5829
+397,33,Autre,culturel,Népal,hiver,13,3,8497,Virement,2,19-07-2024,05-08-2024,19-07-2024 au 05-08-2024,5336
+398,37,Autre,détente,Pérou,été,13,3,8499,Virement,1,21-05-2024,05-06-2024,21-05-2024 au 05-06-2024,7046
+399,27,M,culturel,Vietnam,automne,8,5,2753,Virement,3,04-06-2024,25-06-2024,04-06-2024 au 25-06-2024,5188
+400,41,Autre,culturel,Vietnam,automne,12,4,7360,Virement,1,02-11-2024,18-11-2024,02-11-2024 au 18-11-2024,4356
+401,44,F,culturel,Maroc,été,13,4,8513,Carte de crédit,1,22-07-2024,27-07-2024,22-07-2024 au 27-07-2024,5183
+402,38,F,culturel,Pérou,hiver,12,2,7367,Paypal,1,02-06-2024,03-06-2024,02-06-2024 au 03-06-2024,5815
+403,39,F,détente,Australie,été,10,3,4955,Paypal,2,27-10-2024,01-11-2024,27-10-2024 au 01-11-2024,5073
+404,22,Autre,culturel,France,été,8,3,2761,Virement,1,27-05-2024,04-06-2024,27-05-2024 au 04-06-2024,5061
+405,43,F,aventure,Costa Rica,printemps,9,4,3755,Paypal,3,09-06-2024,13-06-2024,09-06-2024 au 13-06-2024,3947
+406,28,Autre,aventure,Costa Rica,été,12,5,7381,Virement,2,08-01-2025,14-01-2025,08-01-2025 au 14-01-2025,4006
+407,43,M,aventure,Maroc,hiver,9,5,3755,Paypal,3,04-07-2024,23-07-2024,04-07-2024 au 23-07-2024,2896
+408,29,M,culturel,Vietnam,hiver,9,1,3766,Paypal,3,08-01-2025,28-01-2025,08-01-2025 au 28-01-2025,7624
+409,41,Autre,aventure,Vietnam,été,13,3,8533,Carte de crédit,3,19-11-2024,11-12-2024,19-11-2024 au 11-12-2024,3134
+410,32,Autre,détente,Pérou,printemps,8,5,2768,Carte de crédit,2,24-12-2024,23-01-2025,24-12-2024 au 23-01-2025,3961
+411,33,F,détente,Australie,printemps,5,3,637,Carte de crédit,1,29-01-2025,07-02-2025,29-01-2025 au 07-02-2025,3922
+412,54,M,détente,Pérou,été,8,5,2773,Carte de crédit,3,17-09-2024,14-10-2024,17-09-2024 au 14-10-2024,6342
+413,51,F,aventure,France,été,7,5,1979,Virement,2,30-08-2024,06-09-2024,30-08-2024 au 06-09-2024,4558
+414,27,M,détente,Japon,été,14,5,9322,Paypal,2,23-03-2025,08-04-2025,23-03-2025 au 08-04-2025,6872
+415,49,Autre,culturel,Japon,printemps,13,5,8588,Virement,2,21-04-2024,05-05-2024,21-04-2024 au 05-05-2024,3990
+416,30,F,culturel,Japon,été,5,3,667,Paypal,3,22-08-2024,08-09-2024,22-08-2024 au 08-09-2024,5418
+417,38,F,aventure,Vietnam,hiver,5,3,698,Carte de crédit,5,12-09-2024,04-10-2024,12-09-2024 au 04-10-2024,3747
+418,28,Autre,culturel,France,été,13,1,8597,Virement,1,20-04-2024,09-05-2024,20-04-2024 au 09-05-2024,8218
+419,39,Autre,aventure,Australie,hiver,7,1,2005,Virement,3,11-07-2024,27-07-2024,11-07-2024 au 27-07-2024,3219
+420,33,Autre,aventure,Australie,été,12,2,7381,Carte de crédit,3,12-08-2024,04-09-2024,12-08-2024 au 04-09-2024,5465
+421,38,Autre,aventure,Bali,hiver,10,4,4980,Virement,2,05-10-2024,29-10-2024,05-10-2024 au 29-10-2024,5951
+422,38,Autre,aventure,Bali,hiver,12,1,7387,Paypal,2,05-04-2024,24-04-2024,05-04-2024 au 24-04-2024,5621
+423,26,M,culturel,Népal,été,9,5,3766,Paypal,2,25-08-2024,01-09-2024,25-08-2024 au 01-09-2024,4722
+424,18,M,culturel,Maroc,automne,14,4,9374,Carte de crédit,2,19-10-2024,25-10-2024,19-10-2024 au 25-10-2024,4805
+425,31,Autre,détente,Brésil,printemps,6,5,1157,Paypal,1,27-07-2024,30-07-2024,27-07-2024 au 30-07-2024,5066
+426,41,Autre,aventure,Japon,été,8,4,2776,Carte de crédit,2,15-12-2024,11-01-2025,15-12-2024 au 11-01-2025,4779
+427,18,Autre,détente,Norvège,printemps,8,2,2786,Carte de crédit,3,22-04-2024,03-05-2024,22-04-2024 au 03-05-2024,6446
+428,42,Autre,aventure,Costa Rica,hiver,5,1,712,Carte de crédit,2,28-02-2025,08-03-2025,28-02-2025 au 08-03-2025,8316
+429,27,F,aventure,Pérou,hiver,8,2,2793,Paypal,3,13-07-2024,23-07-2024,13-07-2024 au 23-07-2024,4164
+430,24,F,détente,Vietnam,été,6,3,1166,Virement,3,24-01-2025,11-02-2025,24-01-2025 au 11-02-2025,2945
+431,34,M,culturel,Pérou,hiver,11,3,6217,Virement,2,20-06-2024,02-07-2024,20-06-2024 au 02-07-2024,4868
+432,52,Autre,aventure,Bali,hiver,12,2,7397,Paypal,3,23-05-2024,31-05-2024,23-05-2024 au 31-05-2024,8870
+433,27,Autre,détente,Japon,automne,7,2,2008,Virement,3,13-07-2024,29-07-2024,13-07-2024 au 29-07-2024,3794
+434,41,F,aventure,Norvège,automne,6,2,1171,Virement,3,18-05-2024,27-05-2024,18-05-2024 au 27-05-2024,7459
+435,24,Autre,aventure,Brésil,été,7,3,2021,Carte de crédit,1,13-08-2024,12-09-2024,13-08-2024 au 12-09-2024,7517
+436,44,Autre,culturel,Costa Rica,printemps,10,1,5007,Virement,2,24-02-2025,22-03-2025,24-02-2025 au 22-03-2025,4170
+437,49,F,culturel,Bali,hiver,13,5,8598,Carte de crédit,3,02-12-2024,30-12-2024,02-12-2024 au 30-12-2024,5853
+438,36,Autre,culturel,Japon,hiver,13,3,8611,Virement,2,18-07-2024,27-07-2024,18-07-2024 au 27-07-2024,7443
+439,40,M,culturel,Japon,été,15,3,9683,Paypal,2,28-08-2024,30-08-2024,28-08-2024 au 30-08-2024,4431
+440,27,Autre,détente,Népal,hiver,6,1,1171,Carte de crédit,2,04-04-2024,28-04-2024,04-04-2024 au 28-04-2024,4695
+441,31,Autre,culturel,Japon,été,12,2,7399,Paypal,3,10-10-2024,07-11-2024,10-10-2024 au 07-11-2024,4127
+442,30,Autre,détente,Maroc,hiver,11,5,6219,Virement,3,03-12-2024,13-12-2024,03-12-2024 au 13-12-2024,3478
+443,30,F,détente,France,hiver,6,1,1173,Virement,4,24-10-2024,29-10-2024,24-10-2024 au 29-10-2024,4026
+444,35,F,aventure,Islande,été,8,1,2796,Virement,2,21-03-2025,29-03-2025,21-03-2025 au 29-03-2025,3164
+445,45,Autre,détente,Brésil,printemps,15,4,9701,Virement,3,06-10-2024,11-10-2024,06-10-2024 au 11-10-2024,5051
+446,56,Autre,aventure,Costa Rica,hiver,9,3,3775,Virement,2,07-12-2024,20-12-2024,07-12-2024 au 20-12-2024,3845
+447,32,Autre,culturel,Bali,hiver,7,1,2023,Virement,2,13-05-2024,26-05-2024,13-05-2024 au 26-05-2024,5351
+448,22,F,culturel,Pérou,hiver,7,5,2024,Carte de crédit,4,19-10-2024,23-10-2024,19-10-2024 au 23-10-2024,2666
+449,47,Autre,culturel,Costa Rica,été,8,4,2809,Virement,4,07-03-2025,01-04-2025,07-03-2025 au 01-04-2025,5496
+450,34,M,aventure,Islande,été,12,2,7438,Virement,2,28-03-2025,29-03-2025,28-03-2025 au 29-03-2025,6250
+451,28,Autre,culturel,Japon,hiver,5,5,713,Virement,2,30-09-2024,23-10-2024,30-09-2024 au 23-10-2024,2009
+452,26,M,aventure,Brésil,été,11,3,6249,Virement,1,05-03-2025,27-03-2025,05-03-2025 au 27-03-2025,5561
+453,27,Autre,détente,Costa Rica,printemps,10,4,5040,Virement,3,24-01-2025,02-02-2025,24-01-2025 au 02-02-2025,6842
+454,45,Autre,culturel,Norvège,hiver,6,2,1240,Paypal,2,27-03-2025,04-04-2025,27-03-2025 au 04-04-2025,3186
+455,38,Autre,détente,Norvège,hiver,5,3,733,Carte de crédit,3,31-03-2024,18-04-2024,31-03-2024 au 18-04-2024,7509
+456,30,Autre,culturel,Australie,hiver,12,5,7462,Carte de crédit,2,23-10-2024,15-11-2024,23-10-2024 au 15-11-2024,5629
+457,38,Autre,aventure,Japon,hiver,10,2,5076,Virement,3,26-07-2024,09-08-2024,26-07-2024 au 09-08-2024,3942
+458,27,M,détente,France,été,8,3,2846,Virement,2,28-11-2024,17-12-2024,28-11-2024 au 17-12-2024,4916
+459,33,F,culturel,Bali,hiver,9,4,3778,Carte de crédit,2,30-12-2024,10-01-2025,30-12-2024 au 10-01-2025,5837
+460,23,Autre,culturel,France,hiver,12,1,7474,Virement,2,27-08-2024,05-09-2024,27-08-2024 au 05-09-2024,5114
+461,26,F,culturel,Japon,hiver,8,1,2849,Paypal,3,28-10-2024,05-11-2024,28-10-2024 au 05-11-2024,5808
+462,39,F,culturel,Australie,hiver,7,3,2045,Virement,2,18-10-2024,06-11-2024,18-10-2024 au 06-11-2024,3619
+463,56,F,détente,Norvège,automne,14,2,9377,Paypal,2,29-06-2024,02-07-2024,29-06-2024 au 02-07-2024,5254
+464,41,Autre,culturel,Maroc,printemps,12,2,7502,Carte de crédit,2,22-01-2025,21-02-2025,22-01-2025 au 21-02-2025,2879
+465,33,M,culturel,Norvège,été,10,2,5096,Virement,2,18-03-2025,13-04-2025,18-03-2025 au 13-04-2025,4833
+466,41,F,culturel,Népal,hiver,11,4,6255,Carte de crédit,2,24-04-2024,19-05-2024,24-04-2024 au 19-05-2024,3644
+467,35,F,culturel,Népal,été,12,4,7524,Virement,2,01-09-2024,27-09-2024,01-09-2024 au 27-09-2024,3897
+468,38,M,culturel,Népal,hiver,9,1,3797,Paypal,4,27-01-2025,17-02-2025,27-01-2025 au 17-02-2025,6854
+469,45,Autre,culturel,Brésil,hiver,12,4,7546,Virement,2,07-07-2024,12-07-2024,07-07-2024 au 12-07-2024,6637
+470,35,M,culturel,Pérou,hiver,8,1,2893,Carte de crédit,4,03-12-2024,28-12-2024,03-12-2024 au 28-12-2024,5914
+471,54,F,culturel,Pérou,été,6,2,1243,Paypal,3,30-08-2024,02-09-2024,30-08-2024 au 02-09-2024,3362
+472,29,Autre,culturel,Brésil,été,8,5,2899,Carte de crédit,3,06-05-2024,05-06-2024,06-05-2024 au 05-06-2024,4525
+473,40,F,détente,Australie,automne,9,2,3801,Carte de crédit,1,13-11-2024,11-12-2024,13-11-2024 au 11-12-2024,6820
+474,47,Autre,culturel,Islande,automne,12,5,7616,Carte de crédit,4,24-09-2024,13-10-2024,24-09-2024 au 13-10-2024,5213
+475,47,M,détente,Islande,automne,12,1,7619,Virement,3,23-07-2024,14-08-2024,23-07-2024 au 14-08-2024,8479
+476,42,Autre,aventure,Islande,hiver,13,3,8629,Virement,1,26-06-2024,02-07-2024,26-06-2024 au 02-07-2024,5590
+477,29,M,culturel,Bali,hiver,9,1,3853,Paypal,2,17-02-2025,22-02-2025,17-02-2025 au 22-02-2025,5288
+478,54,Autre,détente,Australie,automne,12,1,7631,Virement,3,07-06-2024,20-06-2024,07-06-2024 au 20-06-2024,4536
+479,33,M,aventure,Népal,automne,11,4,6262,Carte de crédit,1,09-03-2025,30-03-2025,09-03-2025 au 30-03-2025,5200
+480,24,M,culturel,Australie,été,12,5,7633,Carte de crédit,2,20-01-2025,07-02-2025,20-01-2025 au 07-02-2025,4771
+481,26,Autre,aventure,Népal,été,11,2,6263,Paypal,1,26-05-2024,21-06-2024,26-05-2024 au 21-06-2024,6062
+482,37,F,aventure,Norvège,été,6,5,1246,Virement,2,26-07-2024,20-08-2024,26-07-2024 au 20-08-2024,6435
+483,47,Autre,culturel,Vietnam,été,8,4,2900,Carte de crédit,3,21-07-2024,29-07-2024,21-07-2024 au 29-07-2024,3821
+484,49,M,aventure,Vietnam,hiver,13,2,8636,Virement,2,10-09-2024,11-09-2024,10-09-2024 au 11-09-2024,3003
+485,36,M,culturel,Norvège,été,12,5,7642,Virement,2,22-04-2024,06-05-2024,22-04-2024 au 06-05-2024,2246
+486,30,Autre,culturel,Islande,hiver,5,2,735,Virement,4,13-12-2024,19-12-2024,13-12-2024 au 19-12-2024,5762
+487,28,F,culturel,Japon,printemps,7,3,2048,Virement,4,08-12-2024,04-01-2025,08-12-2024 au 04-01-2025,3345
+488,31,F,culturel,France,automne,15,2,9705,Virement,2,21-06-2024,23-06-2024,21-06-2024 au 23-06-2024,1771
+489,44,F,aventure,Vietnam,hiver,8,3,2907,Virement,3,26-07-2024,05-08-2024,26-07-2024 au 05-08-2024,5583
+490,30,F,aventure,Costa Rica,hiver,7,1,2074,Paypal,3,01-04-2024,04-04-2024,01-04-2024 au 04-04-2024,8739
+491,30,Autre,aventure,Costa Rica,été,12,3,7655,Virement,3,25-04-2024,20-05-2024,25-04-2024 au 20-05-2024,4991
+492,51,M,culturel,Japon,automne,6,4,1260,Virement,3,15-02-2025,10-03-2025,15-02-2025 au 10-03-2025,6258
+493,44,F,aventure,Costa Rica,été,11,2,6266,Paypal,2,01-01-2025,29-01-2025,01-01-2025 au 29-01-2025,5123
+494,42,F,culturel,Vietnam,été,11,5,6268,Paypal,2,21-03-2025,17-04-2025,21-03-2025 au 17-04-2025,4852
+495,43,M,détente,Népal,été,6,1,1267,Virement,3,25-03-2025,30-03-2025,25-03-2025 au 30-03-2025,6379
+496,26,F,culturel,Japon,hiver,14,4,9413,Paypal,3,02-11-2024,25-11-2024,02-11-2024 au 25-11-2024,4565
+497,43,F,aventure,Pérou,été,6,2,1270,Virement,3,30-04-2024,21-05-2024,30-04-2024 au 21-05-2024,5401
+498,41,F,culturel,Norvège,printemps,14,3,9423,Virement,2,15-06-2024,21-06-2024,15-06-2024 au 21-06-2024,5483
+499,37,Autre,détente,Népal,été,8,1,2936,Carte de crédit,2,02-03-2025,03-03-2025,02-03-2025 au 03-03-2025,3998
+500,47,Autre,aventure,Népal,été,10,2,5103,Virement,2,03-02-2025,13-02-2025,03-02-2025 au 13-02-2025,6488
+501,37,Autre,culturel,Bali,été,13,4,8649,Paypal,1,11-02-2025,19-02-2025,11-02-2025 au 19-02-2025,4738
+502,35,M,aventure,Costa Rica,hiver,8,2,2939,Carte de crédit,4,23-06-2024,24-06-2024,23-06-2024 au 24-06-2024,3866
+503,18,M,culturel,Pérou,été,9,4,3874,Carte de crédit,2,21-10-2024,01-11-2024,21-10-2024 au 01-11-2024,5805
+504,28,M,culturel,Brésil,hiver,10,4,5107,Carte de crédit,2,26-05-2024,03-06-2024,26-05-2024 au 03-06-2024,3652
+505,29,Autre,aventure,Brésil,automne,7,1,2081,Paypal,1,24-10-2024,16-11-2024,24-10-2024 au 16-11-2024,5042
+506,33,Autre,culturel,Vietnam,été,12,2,7662,Virement,2,05-11-2024,06-11-2024,05-11-2024 au 06-11-2024,4986
+507,41,Autre,détente,Norvège,hiver,8,4,2942,Virement,2,23-06-2024,19-07-2024,23-06-2024 au 19-07-2024,6629
+508,27,F,culturel,Bali,automne,11,4,6276,Paypal,4,20-09-2024,26-09-2024,20-09-2024 au 26-09-2024,5712
+509,27,Autre,aventure,Australie,automne,12,5,7683,Virement,2,25-03-2025,07-04-2025,25-03-2025 au 07-04-2025,4962
+510,30,Autre,culturel,Népal,été,12,1,7690,Paypal,4,10-06-2024,25-06-2024,10-06-2024 au 25-06-2024,6227
+511,24,F,détente,Norvège,printemps,9,3,3876,Virement,1,19-03-2025,31-03-2025,19-03-2025 au 31-03-2025,7085
+512,31,F,détente,Vietnam,été,8,1,2946,Virement,2,14-06-2024,20-06-2024,14-06-2024 au 20-06-2024,5837
+513,27,Autre,culturel,Népal,été,11,1,6294,Virement,1,07-11-2024,03-12-2024,07-11-2024 au 03-12-2024,5016
+514,34,Autre,aventure,Népal,hiver,10,5,5128,Virement,1,29-09-2024,21-10-2024,29-09-2024 au 21-10-2024,3032
+515,38,Autre,aventure,Costa Rica,été,10,4,5129,Virement,3,19-11-2024,21-11-2024,19-11-2024 au 21-11-2024,3402
+516,43,Autre,détente,Japon,été,9,5,3890,Paypal,3,02-05-2024,03-05-2024,02-05-2024 au 03-05-2024,4542
+517,33,F,détente,Australie,automne,8,1,2949,Paypal,3,23-09-2024,13-10-2024,23-09-2024 au 13-10-2024,4086
+518,20,Autre,culturel,Norvège,printemps,9,5,3893,Carte de crédit,3,04-01-2025,11-01-2025,04-01-2025 au 11-01-2025,4720
+519,25,M,culturel,Brésil,été,8,5,2955,Virement,2,22-05-2024,14-06-2024,22-05-2024 au 14-06-2024,5085
+520,50,Autre,aventure,Bali,hiver,5,5,749,Carte de crédit,4,17-05-2024,25-05-2024,17-05-2024 au 25-05-2024,5795
+521,29,F,aventure,Bali,hiver,8,1,2956,Virement,5,21-08-2024,02-09-2024,21-08-2024 au 02-09-2024,4894
+522,23,Autre,détente,Costa Rica,automne,12,3,7693,Virement,5,25-04-2024,23-05-2024,25-04-2024 au 23-05-2024,5730
+523,52,F,aventure,France,été,11,3,6304,Virement,3,17-05-2024,12-06-2024,17-05-2024 au 12-06-2024,5097
+524,50,M,culturel,Maroc,été,9,5,3919,Paypal,2,21-12-2024,15-01-2025,21-12-2024 au 15-01-2025,2037
+525,42,Autre,culturel,Pérou,automne,8,1,2957,Paypal,4,10-07-2024,22-07-2024,10-07-2024 au 22-07-2024,3591
+526,38,F,détente,Bali,été,9,5,3919,Carte de crédit,3,29-01-2025,02-02-2025,29-01-2025 au 02-02-2025,4784
+527,38,Autre,culturel,Pérou,été,12,4,7749,Carte de crédit,3,01-07-2024,15-07-2024,01-07-2024 au 15-07-2024,3185
+528,39,Autre,aventure,Australie,hiver,10,2,5137,Virement,3,14-07-2024,01-08-2024,14-07-2024 au 01-08-2024,5900
+529,25,M,aventure,Islande,automne,11,1,6309,Virement,1,04-02-2025,12-02-2025,04-02-2025 au 12-02-2025,7296
+530,41,M,culturel,Australie,hiver,9,4,3939,Virement,2,12-01-2025,15-01-2025,12-01-2025 au 15-01-2025,6828
+531,47,Autre,détente,Népal,automne,6,5,1292,Paypal,1,29-05-2024,10-06-2024,29-05-2024 au 10-06-2024,4680
+532,45,Autre,détente,Népal,hiver,10,3,5137,Carte de crédit,1,09-09-2024,14-09-2024,09-09-2024 au 14-09-2024,7236
+533,25,F,aventure,Maroc,printemps,13,4,8652,Paypal,1,19-05-2024,27-05-2024,19-05-2024 au 27-05-2024,5223
+534,29,Autre,culturel,Bali,printemps,11,5,6315,Virement,2,24-04-2024,10-05-2024,24-04-2024 au 10-05-2024,4494
+535,31,F,culturel,Bali,automne,10,4,5150,Paypal,2,28-10-2024,17-11-2024,28-10-2024 au 17-11-2024,4080
+536,52,M,détente,Japon,automne,9,5,3943,Virement,2,08-01-2025,30-01-2025,08-01-2025 au 30-01-2025,4546
+537,31,Autre,détente,France,été,11,1,6325,Paypal,3,24-01-2025,21-02-2025,24-01-2025 au 21-02-2025,4418
+538,27,Autre,détente,Islande,automne,12,2,7759,Virement,2,12-03-2025,14-03-2025,12-03-2025 au 14-03-2025,5256
+539,18,Autre,culturel,Pérou,été,13,4,8672,Virement,3,18-08-2024,22-08-2024,18-08-2024 au 22-08-2024,5241
+540,24,M,détente,Australie,automne,7,1,2082,Virement,1,26-12-2024,30-12-2024,26-12-2024 au 30-12-2024,5005
+541,50,F,culturel,Norvège,automne,9,4,3945,Paypal,3,20-02-2025,19-03-2025,20-02-2025 au 19-03-2025,5655
+542,37,Autre,culturel,Bali,été,9,2,3945,Virement,3,01-10-2024,13-10-2024,01-10-2024 au 13-10-2024,6786
+543,18,Autre,détente,Népal,été,6,1,1301,Virement,3,25-07-2024,12-08-2024,25-07-2024 au 12-08-2024,6424
+544,32,F,culturel,Japon,été,13,4,8689,Carte de crédit,1,21-12-2024,05-01-2025,21-12-2024 au 05-01-2025,2773
+545,20,Autre,détente,Costa Rica,hiver,9,4,3972,Virement,1,16-02-2025,24-02-2025,16-02-2025 au 24-02-2025,1169
+546,29,Autre,culturel,Australie,automne,11,3,6331,Virement,1,07-05-2024,12-05-2024,07-05-2024 au 12-05-2024,6401
+547,18,M,aventure,Maroc,automne,10,3,5158,Carte de crédit,3,06-03-2025,24-03-2025,06-03-2025 au 24-03-2025,2950
+548,29,M,détente,Pérou,printemps,10,1,5212,Virement,1,05-01-2025,23-01-2025,05-01-2025 au 23-01-2025,4663
+549,45,Autre,culturel,Vietnam,printemps,11,2,6332,Virement,1,17-12-2024,14-01-2025,17-12-2024 au 14-01-2025,3245
+550,33,M,culturel,Norvège,été,10,5,5220,Virement,2,05-06-2024,02-07-2024,05-06-2024 au 02-07-2024,2297
+551,33,M,culturel,Brésil,été,12,1,7797,Paypal,4,27-04-2024,16-05-2024,27-04-2024 au 16-05-2024,5812
+552,26,Autre,détente,Australie,printemps,10,2,5308,Paypal,3,29-06-2024,13-07-2024,29-06-2024 au 13-07-2024,6139
+553,34,M,culturel,France,automne,8,3,2965,Carte de crédit,2,15-01-2025,12-02-2025,15-01-2025 au 12-02-2025,4135
+554,18,Autre,culturel,Australie,été,9,1,3989,Paypal,4,26-08-2024,14-09-2024,26-08-2024 au 14-09-2024,1113
+555,50,M,aventure,Brésil,été,13,4,8690,Virement,2,15-07-2024,13-08-2024,15-07-2024 au 13-08-2024,4181
+556,18,M,culturel,Népal,hiver,9,2,3993,Paypal,2,01-11-2024,05-11-2024,01-11-2024 au 05-11-2024,5588
+557,18,M,aventure,Norvège,hiver,9,3,4002,Carte de crédit,1,25-10-2024,28-10-2024,25-10-2024 au 28-10-2024,2782
+558,44,Autre,détente,Islande,été,10,4,5311,Carte de crédit,2,30-05-2024,18-06-2024,30-05-2024 au 18-06-2024,5275
+559,24,M,aventure,Islande,été,9,3,4008,Carte de crédit,1,11-12-2024,24-12-2024,11-12-2024 au 24-12-2024,4977
+560,34,M,culturel,Brésil,printemps,7,3,2085,Paypal,3,08-03-2025,05-04-2025,08-03-2025 au 05-04-2025,5869
+561,50,Autre,aventure,Népal,hiver,12,4,7810,Paypal,2,09-07-2024,16-07-2024,09-07-2024 au 16-07-2024,5179
+562,36,Autre,détente,Vietnam,hiver,14,2,9424,Paypal,3,29-04-2024,18-05-2024,29-04-2024 au 18-05-2024,3540
+563,34,M,détente,Vietnam,été,6,2,1319,Paypal,1,19-10-2024,17-11-2024,19-10-2024 au 17-11-2024,6795
+564,44,M,détente,Brésil,été,9,5,4017,Paypal,3,05-10-2024,06-10-2024,05-10-2024 au 06-10-2024,4762
+565,51,Autre,culturel,Norvège,automne,11,4,6350,Virement,2,16-03-2025,15-04-2025,16-03-2025 au 15-04-2025,4959
+566,34,M,détente,Vietnam,été,10,3,5324,Virement,5,15-06-2024,21-06-2024,15-06-2024 au 21-06-2024,3600
+567,43,Autre,culturel,Vietnam,automne,9,1,4032,Virement,2,31-01-2025,03-02-2025,31-01-2025 au 03-02-2025,4335
+568,36,Autre,culturel,Népal,hiver,8,3,2979,Carte de crédit,4,18-02-2025,02-03-2025,18-02-2025 au 02-03-2025,3673
+569,35,F,aventure,Népal,hiver,11,4,6358,Paypal,3,13-02-2025,03-03-2025,13-02-2025 au 03-03-2025,4741
+570,29,M,culturel,Costa Rica,hiver,12,2,7814,Virement,3,11-04-2024,15-04-2024,11-04-2024 au 15-04-2024,7568
+571,36,F,aventure,Vietnam,hiver,11,2,6362,Carte de crédit,2,09-07-2024,04-08-2024,09-07-2024 au 04-08-2024,2942
+572,25,Autre,aventure,Maroc,hiver,7,2,2089,Paypal,2,15-11-2024,13-12-2024,15-11-2024 au 13-12-2024,2580
+573,28,F,détente,Népal,été,5,1,755,Paypal,3,09-08-2024,06-09-2024,09-08-2024 au 06-09-2024,7207
+574,45,F,culturel,Brésil,printemps,14,3,9437,Virement,1,25-06-2024,12-07-2024,25-06-2024 au 12-07-2024,4686
+575,32,M,aventure,Pérou,été,6,2,1330,Paypal,3,08-09-2024,24-09-2024,08-09-2024 au 24-09-2024,3996
+576,29,M,culturel,Népal,hiver,11,1,6365,Virement,3,26-08-2024,07-09-2024,26-08-2024 au 07-09-2024,6560
+577,46,Autre,détente,France,hiver,9,4,4033,Carte de crédit,4,24-08-2024,31-08-2024,24-08-2024 au 31-08-2024,4092
+578,27,Autre,culturel,Népal,hiver,8,2,2982,Carte de crédit,3,05-09-2024,16-09-2024,05-09-2024 au 16-09-2024,7739
+579,40,Autre,aventure,Costa Rica,hiver,10,4,5341,Paypal,2,05-12-2024,23-12-2024,05-12-2024 au 23-12-2024,6017
+580,41,Autre,culturel,Costa Rica,été,8,3,2982,Virement,2,14-09-2024,01-10-2024,14-09-2024 au 01-10-2024,4268
+581,27,F,détente,Népal,automne,5,1,755,Virement,3,08-01-2025,17-01-2025,08-01-2025 au 17-01-2025,8236
+582,57,Autre,aventure,Népal,hiver,9,5,4052,Carte de crédit,2,02-11-2024,14-11-2024,02-11-2024 au 14-11-2024,4091
+583,33,M,détente,Bali,automne,11,1,6403,Virement,3,15-10-2024,13-11-2024,15-10-2024 au 13-11-2024,6113
+584,37,M,culturel,Bali,été,11,3,6407,Carte de crédit,2,12-02-2025,13-03-2025,12-02-2025 au 13-03-2025,5449
+585,38,Autre,culturel,Japon,hiver,11,4,6452,Paypal,2,31-03-2024,22-04-2024,31-03-2024 au 22-04-2024,6953
+586,35,Autre,culturel,Costa Rica,été,10,3,5345,Virement,3,08-02-2025,21-02-2025,08-02-2025 au 21-02-2025,7342
+587,25,F,culturel,France,hiver,5,1,775,Carte de crédit,2,12-09-2024,09-10-2024,12-09-2024 au 09-10-2024,5048
+588,35,M,culturel,Islande,été,12,1,7816,Paypal,3,18-02-2025,18-03-2025,18-02-2025 au 18-03-2025,3870
+589,33,Autre,culturel,Japon,été,5,4,780,Paypal,2,01-05-2024,19-05-2024,01-05-2024 au 19-05-2024,5690
+590,43,M,aventure,Pérou,automne,9,5,4068,Virement,3,26-03-2025,13-04-2025,26-03-2025 au 13-04-2025,3983
+591,49,M,culturel,Australie,hiver,6,4,1367,Carte de crédit,4,09-05-2024,22-05-2024,09-05-2024 au 22-05-2024,8020
+592,50,M,aventure,Népal,hiver,14,5,9460,Paypal,4,08-08-2024,17-08-2024,08-08-2024 au 17-08-2024,5205
+593,23,Autre,détente,Norvège,hiver,10,2,5364,Virement,4,07-04-2024,02-05-2024,07-04-2024 au 02-05-2024,4452
+594,34,Autre,détente,France,hiver,10,2,5365,Carte de crédit,2,11-07-2024,25-07-2024,11-07-2024 au 25-07-2024,5277
+595,20,F,détente,Islande,été,11,4,6459,Paypal,3,17-10-2024,04-11-2024,17-10-2024 au 04-11-2024,2979
+596,44,Autre,détente,Népal,été,11,5,6471,Carte de crédit,2,23-11-2024,19-12-2024,23-11-2024 au 19-12-2024,3543
+597,39,Autre,détente,Australie,hiver,5,2,802,Carte de crédit,2,25-03-2025,12-04-2025,25-03-2025 au 12-04-2025,6801
+598,53,Autre,détente,Islande,hiver,11,1,6480,Virement,2,14-11-2024,02-12-2024,14-11-2024 au 02-12-2024,4015
+599,25,F,culturel,Japon,été,11,5,6480,Paypal,2,15-10-2024,04-11-2024,15-10-2024 au 04-11-2024,3430
+600,37,M,détente,Brésil,été,15,4,9707,Paypal,4,05-05-2024,10-05-2024,05-05-2024 au 10-05-2024,5805
+601,44,M,culturel,Pérou,printemps,9,4,4079,Virement,3,11-06-2024,03-07-2024,11-06-2024 au 03-07-2024,6779
+602,37,M,culturel,Népal,été,7,5,2101,Virement,3,22-06-2024,25-06-2024,22-06-2024 au 25-06-2024,6078
+603,37,Autre,culturel,Costa Rica,printemps,9,3,4096,Virement,2,08-08-2024,01-09-2024,08-08-2024 au 01-09-2024,6494
+604,34,Autre,culturel,Bali,printemps,10,1,5384,Carte de crédit,2,06-05-2024,13-05-2024,06-05-2024 au 13-05-2024,3865
+605,33,Autre,aventure,Brésil,printemps,5,3,810,Virement,4,29-09-2024,24-10-2024,29-09-2024 au 24-10-2024,2867
+606,18,M,aventure,France,été,5,3,830,Paypal,3,17-08-2024,31-08-2024,17-08-2024 au 31-08-2024,7252
+607,36,Autre,culturel,Maroc,automne,7,3,2113,Carte de crédit,2,26-10-2024,30-10-2024,26-10-2024 au 30-10-2024,4516
+608,18,M,culturel,France,automne,10,2,5388,Virement,3,01-12-2024,07-12-2024,01-12-2024 au 07-12-2024,4624
+609,36,M,culturel,Brésil,hiver,12,2,7857,Virement,2,24-10-2024,11-11-2024,24-10-2024 au 11-11-2024,6992
+610,31,M,détente,Australie,hiver,11,4,6550,Paypal,4,01-11-2024,18-11-2024,01-11-2024 au 18-11-2024,5834
+611,44,M,culturel,Népal,hiver,15,2,9723,Virement,3,21-11-2024,15-12-2024,21-11-2024 au 15-12-2024,5684
+612,34,Autre,aventure,Bali,hiver,17,4,9958,Paypal,3,27-11-2024,03-12-2024,27-11-2024 au 03-12-2024,8248
+613,30,M,culturel,Pérou,automne,9,5,4098,Carte de crédit,3,03-08-2024,05-08-2024,03-08-2024 au 05-08-2024,4035
+614,20,Autre,culturel,Pérou,printemps,7,2,2133,Carte de crédit,3,09-09-2024,05-10-2024,09-09-2024 au 05-10-2024,6392
+615,47,Autre,détente,Vietnam,été,10,4,5391,Virement,3,13-01-2025,12-02-2025,13-01-2025 au 12-02-2025,5086
+616,26,F,détente,Bali,été,9,5,4104,Virement,2,23-12-2024,25-12-2024,23-12-2024 au 25-12-2024,5403
+617,30,M,détente,Japon,hiver,7,3,2140,Paypal,3,02-10-2024,12-10-2024,02-10-2024 au 12-10-2024,7293
+618,54,Autre,détente,France,hiver,10,1,5402,Virement,3,26-03-2025,13-04-2025,26-03-2025 au 13-04-2025,5762
+619,18,Autre,aventure,Vietnam,printemps,11,5,6607,Paypal,3,13-02-2025,05-03-2025,13-02-2025 au 05-03-2025,5807
+620,40,M,détente,Brésil,printemps,12,5,7858,Paypal,3,03-03-2025,30-03-2025,03-03-2025 au 30-03-2025,6609
+621,45,Autre,aventure,Bali,printemps,11,3,6622,Carte de crédit,2,24-03-2025,21-04-2025,24-03-2025 au 21-04-2025,4453
+622,26,Autre,aventure,Vietnam,hiver,9,2,4121,Virement,1,04-11-2024,08-11-2024,04-11-2024 au 08-11-2024,3741
+623,35,Autre,culturel,France,hiver,7,1,2166,Carte de crédit,3,02-09-2024,14-09-2024,02-09-2024 au 14-09-2024,3433
+624,38,Autre,culturel,Norvège,été,10,2,5404,Paypal,3,03-10-2024,28-10-2024,03-10-2024 au 28-10-2024,2050
+625,39,M,culturel,Bali,été,9,2,4136,Virement,2,13-09-2024,15-09-2024,13-09-2024 au 15-09-2024,8084
+626,41,Autre,détente,Islande,automne,9,5,4143,Virement,3,10-05-2024,18-05-2024,10-05-2024 au 18-05-2024,3345
+627,50,M,détente,Brésil,printemps,8,2,2984,Carte de crédit,3,13-02-2025,22-02-2025,13-02-2025 au 22-02-2025,4668
+628,22,Autre,aventure,Brésil,automne,11,1,6631,Carte de crédit,2,07-02-2025,28-02-2025,07-02-2025 au 28-02-2025,4585
+629,59,Autre,culturel,Japon,hiver,7,3,2168,Carte de crédit,1,19-12-2024,17-01-2025,19-12-2024 au 17-01-2025,5461
+630,54,M,culturel,Norvège,printemps,10,5,5404,Carte de crédit,3,14-09-2024,19-09-2024,14-09-2024 au 19-09-2024,6224
+631,47,Autre,culturel,Australie,hiver,13,5,8739,Virement,2,20-12-2024,31-12-2024,20-12-2024 au 31-12-2024,6291
+632,24,M,aventure,Maroc,été,7,4,2195,Virement,3,23-07-2024,21-08-2024,23-07-2024 au 21-08-2024,4125
+633,34,F,culturel,Norvège,printemps,10,2,5419,Virement,3,11-02-2025,09-03-2025,11-02-2025 au 09-03-2025,4749
+634,48,F,aventure,Japon,printemps,8,2,2996,Virement,3,21-11-2024,23-11-2024,21-11-2024 au 23-11-2024,5424
+635,43,Autre,culturel,Brésil,hiver,13,5,8751,Carte de crédit,2,13-07-2024,20-07-2024,13-07-2024 au 20-07-2024,4627
+636,35,Autre,détente,Népal,été,13,1,8753,Virement,3,22-04-2024,28-04-2024,22-04-2024 au 28-04-2024,7411
+637,35,F,culturel,Pérou,été,10,1,5440,Paypal,3,14-08-2024,22-08-2024,14-08-2024 au 22-08-2024,5736
+638,35,M,culturel,Bali,été,8,2,3000,Paypal,2,02-11-2024,01-12-2024,02-11-2024 au 01-12-2024,6102
+639,21,M,détente,Norvège,automne,7,2,2203,Paypal,4,16-02-2025,06-03-2025,16-02-2025 au 06-03-2025,5994
+640,25,F,culturel,Népal,printemps,11,5,6650,Virement,2,21-05-2024,04-06-2024,21-05-2024 au 04-06-2024,6760
+641,35,Autre,détente,Islande,été,5,3,834,Virement,3,05-01-2025,24-01-2025,05-01-2025 au 24-01-2025,5272
+642,36,F,culturel,Brésil,printemps,5,1,841,Paypal,3,23-09-2024,23-10-2024,23-09-2024 au 23-10-2024,3055
+643,29,Autre,détente,Vietnam,printemps,12,2,7858,Carte de crédit,2,17-12-2024,26-12-2024,17-12-2024 au 26-12-2024,5600
+644,31,Autre,culturel,Brésil,été,13,1,8757,Virement,1,21-01-2025,09-02-2025,21-01-2025 au 09-02-2025,4023
+645,46,M,culturel,Népal,été,7,4,2212,Paypal,3,14-01-2025,13-02-2025,14-01-2025 au 13-02-2025,4207
+646,34,Autre,culturel,Maroc,hiver,16,4,9923,Carte de crédit,3,20-10-2024,23-10-2024,20-10-2024 au 23-10-2024,5880
+647,61,F,détente,Brésil,été,10,1,5444,Paypal,3,22-01-2025,03-02-2025,22-01-2025 au 03-02-2025,6857
+648,30,Autre,culturel,Norvège,printemps,8,2,3001,Carte de crédit,1,03-03-2025,01-04-2025,03-03-2025 au 01-04-2025,5032
+649,36,F,aventure,Vietnam,hiver,9,4,4144,Virement,4,17-12-2024,19-12-2024,17-12-2024 au 19-12-2024,5463
+650,33,Autre,aventure,Norvège,hiver,7,3,2219,Paypal,2,25-09-2024,14-10-2024,25-09-2024 au 14-10-2024,7553
+651,43,F,culturel,Maroc,été,10,4,5445,Paypal,3,14-08-2024,28-08-2024,14-08-2024 au 28-08-2024,5361
+652,52,Autre,culturel,Islande,hiver,5,2,849,Virement,3,24-05-2024,13-06-2024,24-05-2024 au 13-06-2024,8903
+653,29,F,culturel,Costa Rica,hiver,5,4,851,Virement,2,02-11-2024,07-11-2024,02-11-2024 au 07-11-2024,5848
+654,35,F,culturel,Brésil,été,9,1,4158,Paypal,2,01-02-2025,09-02-2025,01-02-2025 au 09-02-2025,2359
+655,42,F,aventure,Australie,été,8,2,3002,Carte de crédit,3,25-09-2024,17-10-2024,25-09-2024 au 17-10-2024,6130
+656,18,Autre,culturel,France,été,11,4,6679,Carte de crédit,3,09-02-2025,20-02-2025,09-02-2025 au 20-02-2025,5572
+657,39,Autre,détente,Costa Rica,hiver,9,4,4173,Virement,5,08-05-2024,19-05-2024,08-05-2024 au 19-05-2024,6935
+658,34,F,culturel,Costa Rica,hiver,10,3,5454,Paypal,3,11-03-2025,21-03-2025,11-03-2025 au 21-03-2025,6010
+659,30,Autre,culturel,Pérou,automne,13,5,8795,Carte de crédit,1,30-11-2024,18-12-2024,30-11-2024 au 18-12-2024,4792
+660,26,M,culturel,Pérou,hiver,7,4,2223,Virement,2,09-12-2024,08-01-2025,09-12-2024 au 08-01-2025,3164
+661,30,F,aventure,Japon,hiver,15,5,9724,Carte de crédit,2,04-03-2025,06-03-2025,04-03-2025 au 06-03-2025,4686
+662,38,Autre,aventure,France,été,5,5,873,Carte de crédit,1,17-08-2024,11-09-2024,17-08-2024 au 11-09-2024,3724
+663,48,Autre,aventure,Costa Rica,été,11,5,6679,Virement,3,21-07-2024,09-08-2024,21-07-2024 au 09-08-2024,4129
+664,28,M,culturel,Népal,automne,15,3,9735,Carte de crédit,3,05-03-2025,22-03-2025,05-03-2025 au 22-03-2025,5883
+665,25,F,détente,Pérou,été,13,4,8797,Carte de crédit,2,19-03-2025,14-04-2025,19-03-2025 au 14-04-2025,7505
+666,18,Autre,détente,Maroc,printemps,9,1,4185,Carte de crédit,1,14-03-2025,19-03-2025,14-03-2025 au 19-03-2025,5592
+667,21,Autre,détente,France,hiver,6,3,1368,Paypal,5,16-02-2025,10-03-2025,16-02-2025 au 10-03-2025,3206
+668,26,Autre,culturel,Australie,hiver,7,1,2234,Virement,3,14-10-2024,16-10-2024,14-10-2024 au 16-10-2024,5667
+669,41,Autre,culturel,Australie,printemps,15,2,9739,Virement,3,15-03-2025,24-03-2025,15-03-2025 au 24-03-2025,6795
+670,43,Autre,détente,Australie,été,14,4,9460,Virement,3,25-09-2024,03-10-2024,25-09-2024 au 03-10-2024,4085
+671,32,Autre,détente,France,été,9,3,4198,Virement,4,12-09-2024,28-09-2024,12-09-2024 au 28-09-2024,4799
+672,30,F,aventure,Brésil,printemps,11,3,6692,Virement,3,08-12-2024,30-12-2024,08-12-2024 au 30-12-2024,5022
+673,36,F,aventure,Népal,printemps,14,2,9478,Virement,2,07-05-2024,17-05-2024,07-05-2024 au 17-05-2024,3823
+674,18,Autre,détente,France,hiver,9,4,4205,Virement,2,06-04-2024,17-04-2024,06-04-2024 au 17-04-2024,5972
+675,34,Autre,détente,Japon,printemps,10,5,5486,Virement,1,24-05-2024,25-05-2024,24-05-2024 au 25-05-2024,4819
+676,34,Autre,détente,Islande,hiver,12,5,7876,Virement,3,07-12-2024,30-12-2024,07-12-2024 au 30-12-2024,5629
+677,40,F,détente,Islande,hiver,14,2,9507,Virement,1,23-10-2024,07-11-2024,23-10-2024 au 07-11-2024,3669
+678,35,F,aventure,Australie,été,9,4,4207,Virement,3,29-06-2024,04-07-2024,29-06-2024 au 04-07-2024,4344
+679,31,M,culturel,Bali,hiver,6,1,1375,Carte de crédit,3,01-02-2025,27-02-2025,01-02-2025 au 27-02-2025,6084
+680,33,M,aventure,Népal,automne,5,5,873,Paypal,2,09-03-2025,27-03-2025,09-03-2025 au 27-03-2025,4441
+681,36,Autre,culturel,Japon,printemps,5,1,884,Paypal,2,29-09-2024,30-09-2024,29-09-2024 au 30-09-2024,7590
+682,38,F,aventure,Vietnam,automne,9,1,4210,Paypal,2,07-06-2024,05-07-2024,07-06-2024 au 05-07-2024,4401
+683,21,M,détente,Pérou,automne,13,1,8809,Virement,2,18-07-2024,24-07-2024,18-07-2024 au 24-07-2024,5337
+684,38,M,aventure,Bali,automne,8,1,3009,Virement,1,22-10-2024,10-11-2024,22-10-2024 au 10-11-2024,6399
+685,42,Autre,culturel,Islande,hiver,12,4,7877,Carte de crédit,2,31-10-2024,13-11-2024,31-10-2024 au 13-11-2024,2872
+686,36,Autre,culturel,Bali,automne,10,2,5524,Virement,3,19-08-2024,23-08-2024,19-08-2024 au 23-08-2024,2359
+687,49,Autre,aventure,Norvège,hiver,9,4,4222,Carte de crédit,1,12-08-2024,29-08-2024,12-08-2024 au 29-08-2024,2712
+688,30,Autre,culturel,France,hiver,6,4,1378,Virement,2,03-11-2024,22-11-2024,03-11-2024 au 22-11-2024,6894
+689,31,F,détente,Costa Rica,été,12,4,7883,Carte de crédit,2,26-11-2024,13-12-2024,26-11-2024 au 13-12-2024,4172
+690,37,M,aventure,Norvège,automne,14,3,9512,Carte de crédit,2,09-11-2024,20-11-2024,09-11-2024 au 20-11-2024,8837
+691,28,Autre,culturel,Bali,hiver,12,1,7913,Virement,3,13-10-2024,11-11-2024,13-10-2024 au 11-11-2024,4154
+692,32,F,culturel,Australie,hiver,10,2,5542,Carte de crédit,1,14-06-2024,08-07-2024,14-06-2024 au 08-07-2024,5277
+693,18,M,détente,Costa Rica,été,13,4,8840,Virement,2,24-09-2024,23-10-2024,24-09-2024 au 23-10-2024,7313
+694,26,M,culturel,Pérou,hiver,5,1,885,Carte de crédit,3,09-02-2025,02-03-2025,09-02-2025 au 02-03-2025,8009
+695,47,Autre,détente,Norvège,été,6,5,1397,Virement,4,15-08-2024,24-08-2024,15-08-2024 au 24-08-2024,8092
+696,18,Autre,culturel,Islande,hiver,9,5,4293,Paypal,1,23-06-2024,27-06-2024,23-06-2024 au 27-06-2024,6813
+697,37,F,culturel,France,hiver,14,5,9519,Paypal,2,22-10-2024,12-11-2024,22-10-2024 au 12-11-2024,6536
+698,43,Autre,culturel,Islande,automne,9,2,4298,Virement,3,16-11-2024,02-12-2024,16-11-2024 au 02-12-2024,5889
+699,42,M,détente,Pérou,printemps,12,2,7929,Virement,1,16-03-2025,05-04-2025,16-03-2025 au 05-04-2025,6168
+700,45,Autre,culturel,Norvège,automne,7,3,2250,Virement,3,17-12-2024,08-01-2025,17-12-2024 au 08-01-2025,4173
+701,39,Autre,détente,Maroc,hiver,9,5,4313,Paypal,2,27-12-2024,07-01-2025,27-12-2024 au 07-01-2025,3773
+702,32,F,culturel,Norvège,printemps,13,3,8846,Carte de crédit,1,07-11-2024,07-12-2024,07-11-2024 au 07-12-2024,4995
+703,33,Autre,aventure,Népal,hiver,11,2,6737,Virement,5,13-10-2024,16-10-2024,13-10-2024 au 16-10-2024,4745
+704,33,Autre,aventure,Brésil,été,8,1,3039,Virement,2,21-02-2025,21-03-2025,21-02-2025 au 21-03-2025,4320
+705,37,Autre,culturel,Costa Rica,automne,7,2,2253,Virement,1,14-03-2025,05-04-2025,14-03-2025 au 05-04-2025,6045
+706,54,Autre,culturel,Brésil,printemps,11,3,6741,Paypal,4,19-10-2024,11-11-2024,19-10-2024 au 11-11-2024,6433
+707,46,M,détente,Islande,automne,8,4,3045,Virement,2,03-07-2024,18-07-2024,03-07-2024 au 18-07-2024,5133
+708,48,M,aventure,Maroc,été,16,4,9927,Virement,3,03-10-2024,06-10-2024,03-10-2024 au 06-10-2024,7216
+709,25,Autre,aventure,Bali,hiver,13,4,8849,Carte de crédit,2,30-07-2024,15-08-2024,30-07-2024 au 15-08-2024,3287
+710,36,Autre,détente,Vietnam,été,8,4,3077,Virement,4,29-08-2024,02-09-2024,29-08-2024 au 02-09-2024,4710
+711,18,Autre,culturel,Vietnam,hiver,10,5,5553,Virement,2,05-09-2024,16-09-2024,05-09-2024 au 16-09-2024,3925
+712,35,M,aventure,Costa Rica,été,9,1,4318,Virement,2,25-07-2024,10-08-2024,25-07-2024 au 10-08-2024,2200
+713,50,F,aventure,France,été,10,1,5567,Paypal,2,09-08-2024,14-08-2024,09-08-2024 au 14-08-2024,4876
+714,25,M,aventure,Vietnam,automne,13,2,8876,Virement,4,12-11-2024,07-12-2024,12-11-2024 au 07-12-2024,4817
+715,25,Autre,culturel,Pérou,printemps,12,2,7940,Carte de crédit,3,22-11-2024,19-12-2024,22-11-2024 au 19-12-2024,7270
+716,28,F,détente,Vietnam,automne,12,1,7951,Virement,2,14-02-2025,08-03-2025,14-02-2025 au 08-03-2025,5946
+717,36,Autre,culturel,Vietnam,été,12,2,7973,Paypal,2,15-08-2024,17-08-2024,15-08-2024 au 17-08-2024,3464
+718,37,Autre,culturel,France,été,6,4,1410,Virement,2,06-05-2024,18-05-2024,06-05-2024 au 18-05-2024,7781
+719,24,Autre,culturel,Maroc,printemps,9,4,4327,Virement,1,16-01-2025,10-02-2025,16-01-2025 au 10-02-2025,6832
+720,55,Autre,culturel,Bali,été,13,3,8915,Virement,2,17-11-2024,07-12-2024,17-11-2024 au 07-12-2024,5873
+721,21,Autre,culturel,Maroc,hiver,7,2,2277,Paypal,4,15-02-2025,14-03-2025,15-02-2025 au 14-03-2025,4660
+722,34,Autre,culturel,France,hiver,11,4,6764,Paypal,1,15-11-2024,08-12-2024,15-11-2024 au 08-12-2024,3561
+723,27,F,culturel,Bali,printemps,11,2,6788,Virement,2,03-02-2025,20-02-2025,03-02-2025 au 20-02-2025,4442
+724,37,Autre,culturel,Brésil,hiver,13,5,8919,Virement,2,10-05-2024,11-05-2024,10-05-2024 au 11-05-2024,6633
+725,36,Autre,culturel,Bali,été,12,2,7990,Virement,3,05-02-2025,22-02-2025,05-02-2025 au 22-02-2025,7827
+726,41,Autre,aventure,Pérou,hiver,6,2,1412,Carte de crédit,3,29-09-2024,25-10-2024,29-09-2024 au 25-10-2024,7315
+727,43,Autre,culturel,Australie,automne,9,1,4339,Paypal,2,31-07-2024,23-08-2024,31-07-2024 au 23-08-2024,4267
+728,18,F,culturel,Népal,été,5,2,885,Virement,2,05-01-2025,25-01-2025,05-01-2025 au 25-01-2025,3321
+729,31,Autre,culturel,Pérou,hiver,11,2,6806,Virement,4,07-11-2024,16-11-2024,07-11-2024 au 16-11-2024,5211
+730,46,Autre,culturel,Costa Rica,automne,13,4,8924,Virement,3,09-05-2024,24-05-2024,09-05-2024 au 24-05-2024,2347
+731,37,Autre,culturel,Costa Rica,printemps,8,1,3078,Carte de crédit,2,01-07-2024,11-07-2024,01-07-2024 au 11-07-2024,5485
+732,36,M,aventure,Australie,printemps,15,4,9747,Virement,2,10-03-2025,14-03-2025,10-03-2025 au 14-03-2025,4779
+733,18,Autre,aventure,Costa Rica,automne,11,5,6807,Paypal,2,28-06-2024,24-07-2024,28-06-2024 au 24-07-2024,4301
+734,28,Autre,culturel,Bali,été,10,1,5571,Virement,4,17-01-2025,19-01-2025,17-01-2025 au 19-01-2025,2608
+735,30,F,aventure,France,été,11,3,6837,Virement,1,26-04-2024,15-05-2024,26-04-2024 au 15-05-2024,5770
+736,37,Autre,détente,France,hiver,7,1,2283,Virement,2,17-09-2024,16-10-2024,17-09-2024 au 16-10-2024,4201
+737,37,Autre,aventure,Australie,été,10,4,5573,Virement,4,11-10-2024,22-10-2024,11-10-2024 au 22-10-2024,3245
+738,42,F,culturel,Bali,automne,10,2,5578,Paypal,3,20-05-2024,10-06-2024,20-05-2024 au 10-06-2024,692
+739,47,F,culturel,Brésil,été,10,5,5601,Paypal,4,05-01-2025,26-01-2025,05-01-2025 au 26-01-2025,4959
+740,22,Autre,culturel,Maroc,hiver,12,3,8012,Carte de crédit,3,18-04-2024,10-05-2024,18-04-2024 au 10-05-2024,7658
+741,29,F,culturel,Islande,été,7,3,2293,Carte de crédit,2,09-05-2024,13-05-2024,09-05-2024 au 13-05-2024,7492
+742,19,F,culturel,Islande,été,12,4,8018,Carte de crédit,4,23-11-2024,08-12-2024,23-11-2024 au 08-12-2024,4314
+743,39,Autre,détente,Pérou,printemps,7,4,2296,Paypal,2,20-11-2024,27-11-2024,20-11-2024 au 27-11-2024,4097
+744,18,Autre,détente,Costa Rica,hiver,8,5,3093,Carte de crédit,3,01-07-2024,28-07-2024,01-07-2024 au 28-07-2024,5703
+745,26,F,détente,Norvège,printemps,8,2,3093,Paypal,3,07-06-2024,08-06-2024,07-06-2024 au 08-06-2024,3502
+746,28,Autre,culturel,Népal,automne,10,4,5627,Virement,1,06-02-2025,27-02-2025,06-02-2025 au 27-02-2025,5453
+747,33,F,aventure,France,printemps,11,1,6859,Virement,3,30-07-2024,11-08-2024,30-07-2024 au 11-08-2024,6149
+748,33,F,culturel,Japon,hiver,8,2,3098,Carte de crédit,2,02-12-2024,06-12-2024,02-12-2024 au 06-12-2024,6840
+749,34,M,détente,Costa Rica,automne,6,2,1412,Virement,4,06-08-2024,11-08-2024,06-08-2024 au 11-08-2024,4850
+750,46,M,aventure,Vietnam,hiver,14,3,9524,Virement,2,03-12-2024,30-12-2024,03-12-2024 au 30-12-2024,4694
+751,38,Autre,détente,Costa Rica,printemps,8,2,3103,Paypal,2,01-11-2024,05-11-2024,01-11-2024 au 05-11-2024,3683
+752,26,F,aventure,Australie,hiver,6,1,1421,Virement,3,22-08-2024,24-08-2024,22-08-2024 au 24-08-2024,3760
+753,19,Autre,culturel,Norvège,été,9,2,4345,Virement,5,22-11-2024,27-11-2024,22-11-2024 au 27-11-2024,4660
+754,41,Autre,aventure,France,été,7,4,2305,Virement,2,12-02-2025,26-02-2025,12-02-2025 au 26-02-2025,5551
+755,37,Autre,culturel,Norvège,été,10,3,5634,Virement,2,28-06-2024,02-07-2024,28-06-2024 au 02-07-2024,6370
+756,42,M,aventure,Brésil,été,5,2,887,Paypal,4,23-01-2025,21-02-2025,23-01-2025 au 21-02-2025,3795
+757,33,M,culturel,Népal,printemps,9,4,4376,Virement,2,06-10-2024,26-10-2024,06-10-2024 au 26-10-2024,7239
+758,19,F,culturel,Brésil,hiver,9,3,4388,Virement,2,27-09-2024,02-10-2024,27-09-2024 au 02-10-2024,4593
+759,36,F,aventure,Norvège,automne,12,4,8028,Paypal,2,16-01-2025,13-02-2025,16-01-2025 au 13-02-2025,4968
+760,42,M,culturel,Bali,été,5,1,888,Virement,1,21-08-2024,14-09-2024,21-08-2024 au 14-09-2024,3879
+761,31,F,détente,Norvège,printemps,7,3,2318,Virement,2,16-09-2024,26-09-2024,16-09-2024 au 26-09-2024,1364
+762,36,Autre,aventure,Japon,automne,9,2,4395,Carte de crédit,2,27-05-2024,23-06-2024,27-05-2024 au 23-06-2024,6326
+763,41,M,culturel,Norvège,hiver,8,1,3104,Virement,1,24-01-2025,13-02-2025,24-01-2025 au 13-02-2025,6105
+764,31,Autre,culturel,Népal,hiver,11,1,6867,Carte de crédit,3,14-03-2025,01-04-2025,14-03-2025 au 01-04-2025,4578
+765,23,F,aventure,Bali,été,8,4,3111,Virement,3,01-08-2024,29-08-2024,01-08-2024 au 29-08-2024,5100
+766,43,M,aventure,Australie,été,12,3,8030,Virement,3,01-08-2024,08-08-2024,01-08-2024 au 08-08-2024,5774
+767,26,M,culturel,Brésil,printemps,16,3,9929,Carte de crédit,1,14-03-2025,28-03-2025,14-03-2025 au 28-03-2025,2656
+768,21,Autre,culturel,Costa Rica,hiver,10,3,5641,Virement,4,08-07-2024,22-07-2024,08-07-2024 au 22-07-2024,4206
+769,35,Autre,détente,France,automne,5,3,897,Carte de crédit,4,17-08-2024,21-08-2024,17-08-2024 au 21-08-2024,6191
+770,28,F,aventure,Pérou,automne,10,2,5662,Virement,1,11-11-2024,22-11-2024,11-11-2024 au 22-11-2024,3119
+771,18,M,aventure,Népal,hiver,8,3,3113,Virement,3,15-02-2025,09-03-2025,15-02-2025 au 09-03-2025,5440
+772,33,Autre,aventure,Australie,été,11,1,6873,Paypal,4,22-10-2024,18-11-2024,22-10-2024 au 18-11-2024,2965
+773,31,M,culturel,Costa Rica,automne,8,1,3114,Virement,1,09-02-2025,22-02-2025,09-02-2025 au 22-02-2025,5700
+774,36,Autre,aventure,Islande,automne,11,2,6888,Carte de crédit,3,20-04-2024,20-05-2024,20-04-2024 au 20-05-2024,4947
+775,23,Autre,culturel,Vietnam,printemps,8,5,3130,Virement,3,27-10-2024,15-11-2024,27-10-2024 au 15-11-2024,2577
+776,56,Autre,culturel,Norvège,hiver,7,3,2323,Carte de crédit,1,10-08-2024,26-08-2024,10-08-2024 au 26-08-2024,6747
+777,39,M,culturel,Islande,printemps,11,3,6924,Virement,1,08-10-2024,28-10-2024,08-10-2024 au 28-10-2024,3898
+778,27,F,culturel,Brésil,hiver,7,5,2334,Paypal,2,17-09-2024,19-09-2024,17-09-2024 au 19-09-2024,3785
+779,39,Autre,culturel,Népal,été,9,5,4400,Paypal,2,08-04-2024,14-04-2024,08-04-2024 au 14-04-2024,5301
+780,47,M,culturel,Bali,été,12,4,8036,Carte de crédit,2,23-10-2024,27-10-2024,23-10-2024 au 27-10-2024,6723
+781,37,Autre,culturel,Brésil,hiver,13,5,8948,Paypal,1,25-11-2024,21-12-2024,25-11-2024 au 21-12-2024,3476
+782,34,Autre,détente,Brésil,été,9,5,4416,Paypal,2,02-07-2024,01-08-2024,02-07-2024 au 01-08-2024,5093
+783,36,Autre,culturel,Vietnam,hiver,7,4,2338,Paypal,3,11-05-2024,21-05-2024,11-05-2024 au 21-05-2024,5643
+784,48,M,culturel,Népal,été,10,5,5673,Paypal,1,28-02-2025,28-03-2025,28-02-2025 au 28-03-2025,6040
+785,39,M,détente,Costa Rica,printemps,11,5,6924,Carte de crédit,2,01-08-2024,16-08-2024,01-08-2024 au 16-08-2024,5265
+786,39,M,culturel,France,été,8,2,3160,Paypal,3,15-04-2024,03-05-2024,15-04-2024 au 03-05-2024,4449
+787,34,M,culturel,Maroc,hiver,10,3,5690,Virement,4,11-06-2024,26-06-2024,11-06-2024 au 26-06-2024,3759
+788,53,Autre,culturel,Vietnam,été,13,3,8952,Virement,1,14-04-2024,13-05-2024,14-04-2024 au 13-05-2024,5129
+789,47,Autre,aventure,Pérou,hiver,8,3,3165,Virement,3,06-06-2024,02-07-2024,06-06-2024 au 02-07-2024,3392
+790,18,F,culturel,Brésil,été,15,4,9796,Virement,3,13-04-2024,13-05-2024,13-04-2024 au 13-05-2024,618
+791,35,Autre,culturel,Népal,automne,19,2,11254,Carte de crédit,3,10-09-2024,14-09-2024,10-09-2024 au 14-09-2024,5655
+792,30,M,culturel,Maroc,printemps,7,2,2339,Virement,2,11-07-2024,21-07-2024,11-07-2024 au 21-07-2024,6356
+793,38,Autre,culturel,Népal,été,7,2,2348,Virement,2,15-03-2025,27-03-2025,15-03-2025 au 27-03-2025,1456
+794,43,M,détente,Bali,printemps,13,2,8975,Paypal,3,25-10-2024,02-11-2024,25-10-2024 au 02-11-2024,3485
+795,39,F,aventure,Vietnam,hiver,8,3,3168,Virement,1,16-07-2024,30-07-2024,16-07-2024 au 30-07-2024,5929
+796,25,Autre,détente,Brésil,hiver,10,2,5699,Paypal,1,18-04-2024,18-05-2024,18-04-2024 au 18-05-2024,8086
+797,24,Autre,aventure,Islande,hiver,10,5,5736,Virement,3,14-04-2024,11-05-2024,14-04-2024 au 11-05-2024,5031
+798,46,Autre,culturel,France,été,7,4,2349,Carte de crédit,2,22-11-2024,20-12-2024,22-11-2024 au 20-12-2024,3908
