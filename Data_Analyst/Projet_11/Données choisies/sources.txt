@@ -1,0 +1,22 @@
+FAo 
+
+dist : https://www.cepii.fr/cepii/fr/bdd_modele/bdd_modele_item.asp?id=6
+
+politic : https://ourworldindata.org/grapher/political-polarization-score?mapSelect=~DZA
+
+IDH : https://ourworldindata.org/grapher/human-development-index
+
+elect  : https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS
+
+alim_saine : https://www.fao.org/faostat/fr/#data/CAHD
+
+lpi : https://data.worldbank.org/indicator/LP.LPI.OVRL.XQ?end=2022&most_recent_year_desc=false&start=2007&view=chart
+
+population : https://www.fao.org/faostat/fr/#data/OA
+
+pib : https://www.fao.org/faostat/fr/#data/MK
+
+tarifs : https://data.worldbank.org/indicator/TM.TAX.MRCH.SM.AR.ZS
+
+import et nourriture : https://www.fao.org/faostat/fr/#data/SCL
+
