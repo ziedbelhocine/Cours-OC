@@ -3,10 +3,10 @@ import joblib
 
 model_rf = joblib.load('model_rf.joblib')
 
-nom_fichier = input('Entrez le nom de votre fichier : ')
+nom_fichier = input('Entrez le chemin/nom de votre fichier : ')
 df = pd.read_csv(nom_fichier)
 
-X = df[['margin_low', 'margin_up', 'length']]
+X = df[['diagonal', 'height_left', 'height_right', 'margin_low', 'margin_up', 'length']]
 y = df['id']
 
 predictions = model_rf.predict(X)

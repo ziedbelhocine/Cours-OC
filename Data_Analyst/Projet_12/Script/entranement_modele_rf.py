@@ -5,7 +5,7 @@ import joblib
 # On charge nos données, on supprime les NaN et on définit X et y.
 df = pd.read_csv('billets.csv', sep=';')
 df = df.dropna().reset_index(drop=True)
-X = df[['margin_low', 'margin_up', 'length']]
+X = df[['diagonal', 'height_left', 'height_right', 'margin_low', 'margin_up', 'length']]
 y = df['is_genuine']
 
 # Entraînement des modèles sur le jeu complet avec les paramètres de GridSearch
