@@ -34,8 +34,9 @@ def nettoyer_erp(df_erp: pd.DataFrame, rapport: dict) -> pd.DataFrame:
     df_erp = df_erp[df_erp['onsale_web'] != 0]
     rapport['erp_hors_vente_exclus'] = n_avant - len(df_erp)
 
-    # Doublons sur product_id (clé attendue unique)
+    # Doublons sur product_id (clé attendue unique) -> comptés puis supprimés (on garde la première occurrence)
     rapport['erp_doublons_product_id'] = int(df_erp.duplicated(subset='product_id').sum())
+    df_erp = df_erp.drop_duplicates(subset='product_id', keep='first')
 
     return df_erp
 
@@ -50,22 +51,39 @@ def nettoyer_web(df_web: pd.DataFrame, rapport: dict) -> pd.DataFrame:
     df_web = df_web[~df_web['sku'].isna()]
     rapport['web_sku_manquants_exclus'] = n_avant - len(df_web)
 
-    # Doublons sur sku après nettoyage
-    rapport['web_doublons_sku'] = int(df_web['sku'].duplicated().sum())
-
     # On ne garde que les entrées de type 'product' (exclut les 'attachment', pièces jointes)
     n_avant = len(df_web)
     df_web = df_web[df_web['post_type'] == 'product']
     rapport['web_lignes_non_product_exclues'] = n_avant - len(df_web)
+
+    # product_type manquant (ex. bons cadeaux, sans catégorie assignable) -> ligne exclue
+    n_avant = len(df_web)
+    df_web = df_web[df_web['product_type'].notna()]
+    rapport['web_product_type_manquant_exclus'] = n_avant - len(df_web)
+
+    # Doublons sur sku -> comptés puis supprimés (on garde la première occurrence)
+    # Dédupliqué ICI, après les filtres post_type/product_type : une pièce jointe partageant
+    # le même sku qu'un produit ne doit jamais "gagner" la déduplication à la place du produit.
+    rapport['web_doublons_sku'] = int(df_web['sku'].duplicated().sum())
+    df_web = df_web.drop_duplicates(subset='sku', keep='first')
 
     df_web = df_web.rename(columns={'sku': 'id_web'})
     return df_web
 
 
 def verifier_liaison(df_liaison: pd.DataFrame, rapport: dict) -> pd.DataFrame:
-    """Vérifie l'intégrité du fichier de liaison (clé pivot entre ERP et web)."""
+    """Vérifie l'intégrité du fichier de liaison (clé pivot entre ERP et web).
+
+    Contrairement à nettoyer_erp/nettoyer_web, cette fonction ne supprime volontairement
+    aucun doublon : un doublon sur la table de liaison peut signaler un vrai problème de
+    mapping (ex. un product_id associé à 2 id_web différents) qui mérite une vérification
+    humaine plutôt qu'une correction automatique silencieuse.
+    """
     rapport['liaison_doublons_product_id'] = int(df_liaison['product_id'].duplicated().sum())
-    rapport['liaison_doublons_id_web'] = int(df_liaison['id_web'].duplicated(keep=False).sum())
+    # .dropna() avant duplicated() : sinon plusieurs id_web manquants (NaN) se comptent comme
+    # "dupliqués entre eux", ce qui gonfle artificiellement ce chiffre avec des lignes déjà
+    # comptées séparément dans liaison_id_web_manquants.
+    rapport['liaison_doublons_id_web'] = int(df_liaison['id_web'].dropna().duplicated(keep=False).sum())
     rapport['liaison_id_web_manquants'] = int(df_liaison['id_web'].isna().sum())
     return df_liaison
 
