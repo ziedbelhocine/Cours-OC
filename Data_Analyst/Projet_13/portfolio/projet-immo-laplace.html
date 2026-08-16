@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Base de données immobilière — DATAImmo — Portfolio Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">zied-belhocine.github.io</a>
+      <nav>
+        <a href="index.html#projets">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="fiche-header wrap">
+      <a class="back" href="index.html#projets">← Retour aux projets</a>
+      <h1>Base de données immobilière — DATAImmo (Laplace Immo)</h1>
+      <div class="fiche-meta">
+        <span class="tag">SQL</span>
+        <span class="tag">SQLite</span>
+        <span class="tag">Modélisation 3NF</span>
+        <span class="tag">Dictionnaire de données</span>
+        <span class="tag">RGPD</span>
+      </div>
+    </div>
+
+
+    <style>
+      .fiche-visual img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+
+    <div class="wrap">
+      <div class="fiche-visual">
+        <img src="static/dataimmo.png" alt="Capture d'écran de l'application DATAImmo" />
+      </div>
+    </div>
+
+    <div class="fiche-header wrap">
+      <a href="https://github.com/ziedbelhocine/Cours-OC/tree/master/Data_Analyst/Projet_5" target="_blank"
+        rel="noopener noreferrer" class="btn btn-github">
+        <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"
+          style="vertical-align: text-bottom; margin-right: 8px;">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+        Ouvrir le projet sur GitHub
+      </a>
+    </div>
+
+    <div class="wrap">
+
+      <section class="fiche-section">
+        <span class="label">01 — Contexte / besoin métier</span>
+        <p>
+          Mission réalisée pour Laplace Immo, réseau national d'agences immobilières, dans le
+          cadre du projet stratégique interne "DATAImmo" piloté par la CTO. L'objectif : faire
+          évoluer la base de données collectant les transactions immobilières et foncières
+          françaises pour, à terme, construire un modèle de prévision des prix de vente et
+          mieux accompagner les agences régionales. Ma mission couvrait deux volets : la
+          conception d'un modèle de BDD (dictionnaire de données, schéma relationnel normalisé),
+          son alimentation (charger les données dans la base créée) et rédiger les requêtes SQL d'analyse.
+        </p>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">02 — Données</span>
+        <ul>
+          <li><strong>Sources :</strong> 3 jeux de données à intégrer — les Demandes de valeurs foncières (DVF, open
+            data), le référentiel géographique français de data.gouv (régions, départements, communes), et les données
+            de recensement de population de l'INSEE.</li>
+          <li><strong>Volumétrie :</strong> 34 169 transactions immobilières, réparties sur ~35 000 communes, 109
+            départements et 19 régions.</li>
+          <li><strong>Contrainte RGPD :</strong> le nom de l'acquéreur, présent dans les données sources, a été
+            identifié comme donnée personnelle sont à supprimer — traitement automatisé via Power Query.</li>
+          <li><strong>Clé technique notable :</strong> absence de code département direct dans les données
+            data.gouv/INSEE, et un code département seul insuffisant comme clé unique (plusieurs communes peuvent
+            partager un même code postal) — nécessitant la construction d'une clé composite
+            <code>id_codedep_codecommune</code>.
+          </li>
+        </ul>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">03 — Démarche</span>
+        <ul>
+          <li>Élaboration d'un dictionnaire de données complet pour les 3 sources (DVF, référentiel géographique,
+            données communes), avec pour chaque variable : code, signification, type, longueur, nature et règle de
+            gestion — travail préalable indispensable avant toute modélisation.</li>
+          <li>Conception du schéma relationnel normalisé en 3ᵉ forme normale (3NF), avec identification rigoureuse des
+            clés primaires, clés étrangères et cardinalités pour chaque table (région, département, commune, bien,
+            vente), en évitant les redondances (ex. entre département et code département).</li>
+          <li>Nettoyage et mise en conformité RGPD des fichiers CSV avant import, vérification des doublons et des clés.
+          </li>
+          <li>Création des tables sur SQLite (solution locale) et import des données, avec vérification de l'intégrité
+            par comparaison du nombre de lignes entre fichiers sources et tables importées.</li>
+          <li>Rédaction de 12 requêtes SQL avec jointures multiples, agrégations et sous-requêtes pour répondre aux
+            besoins d'analyse du marché immobilier, avec alias systématiques pour la lisibilité.</li>
+        </ul>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">04 — Résultats &amp; impact</span>
+        <p>
+          Base de données opérationnelle sur SQLite, avec un jeu de 12 requêtes SQL livrant
+          des indicateurs directement exploitables par les agences.
+        </p>
+        <p>
+          Ces requêtes, conservées et rejouées en direct lors de la soutenance, donnent à
+          Laplace Immo une base solide et interrogeable pour alimenter ses futurs travaux de
+          modélisation prédictive des prix.
+        </p>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">05 — Limites &amp; pistes</span>
+        <p>
+          Le contrôle de la qualité des données (doublons, valeurs manquantes, conformité RGPD)
+          a été fait de façon largement manuelle lors de cette mission. Une évolution naturelle
+          serait d'automatiser ces vérifications via des scripts Python exécutés à chaque
+          import — contrôle systématique des doublons, des valeurs aberrantes ou manquantes, et
+          de la bonne suppression des données personnelles — plutôt que de les revérifier à la
+          main à chaque nouvelle livraison de données. Cela sécuriserait le pipeline dans la
+          durée, notamment si la fréquence d'alimentation de la base augmente au-delà d'un
+          import ponctuel.
+        </p>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Zied Belhocine — Data Analyst · <a href="index.html#projets">← Tous les projets</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Étude sur l'accès à l'eau potable — Portfolio Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">zied-belhocine.github.io</a>
+      <nav>
+        <a href="index.html#projets">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="fiche-header wrap">
+      <a class="back" href="index.html#projets">← Retour aux projets</a>
+      <h1>Étude sur l'accès à l'eau potable — Tableau de bord Power BI (DWFA)</h1>
+      <div class="fiche-meta">
+        <span class="tag">Power BI</span>
+        <span class="tag">Data Storytelling</span>
+        <span class="tag">Modèle relationnel</span>
+        <span class="tag">Data Visualisation</span>
+      </div>
+    </div>
+
+    <style>
+      .fiche-visual img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+
+    <div class="wrap">
+      <div class="fiche-visual">
+        <img src="static/powerbi-dwfa.png" alt="Capture d'écran de l'application DWFA" />
+      </div>
+    </div>
+
+    <div class="fiche-header wrap">
+      <a href="https://github.com/ziedbelhocine/Cours-OC/tree/master/Data_Analyst/Projet_10" target="_blank"
+        rel="noopener noreferrer" class="btn btn-github">
+        <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"
+          style="vertical-align: text-bottom; margin-right: 8px;">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+        Ouvrir le projet sur GitHub
+      </a>
+    </div>
+
+    <div class="wrap">
+
+      <section class="fiche-section">
+        <span class="label">01 — Contexte / besoin métier</span>
+        <p>
+          Mission réalisée pour DWFA (Drinking Water For All), une ONG dont l'ambition est de
+          donner accès à l'eau potable à tous. L'association venait de solliciter un
+          financement auprès d'un bailleur de fonds pour investir dans un de ses 3 domaines
+          d'expertise (création de services, modernisation de services existants, consulting
+          auprès de gouvernements), dans un pays encore indéterminé. Le besoin : un tableau de
+          bord permettant d'identifier les pays en difficulté d'accès à l'eau potable et ceux
+          sur lesquels concentrer les efforts, avec 3 niveaux de lecture (mondial, continental,
+          national).
+        </p>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">02 — Données</span>
+        <ul>
+          <li><strong>Source :</strong> jeu de données déjà collecté par un data engineer de l'ONG (indicateurs
+            eau/santé de type OMS/FAO), accompagné d'un dictionnaire de données.</li>
+          <li><strong>Variables clés :</strong> population et densité, région, stabilité politique, qualité des services
+            d'accès à l'eau (basique vs qualité), taux de mortalité lié à l'eau insalubre — avec une évolution
+            disponible dans le temps.</li>
+          <li><strong>Structuration :</strong> modèle relationnel en étoile, avec chaque table de faits reliée à des
+            tables de dimension (région, calendrier/année, granularité géographique).</li>
+          <li><strong>Qualité :</strong> vérification systématique que chaque pays est bien rattaché à une région dans
+            la table de dimension, et traitement au cas par cas des valeurs manquantes lorsque c'était pertinent de les
+            renseigner.</li>
+        </ul>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">03 — Démarche</span>
+        <ul>
+          <li>Cadrage en amont avec le commanditaire (compte-rendu de réunion de lancement) pour définir précisément les
+            indicateurs à visualiser par vue, avant toute construction technique.</li>
+          <li>Réalisation d'un mockup basse fidélité pour chacune des 3 vues (monde, continent, pays), validé avant le
+            développement du tableau de bord final.</li>
+          <li>Choix de l'outil : Power BI, retenu pour sa capacité à centraliser plusieurs sources (fichiers, SQL) et
+            diffuser le résultat à un public varié (web, mobile, rapports).</li>
+          <li>Construction d'un modèle de données relationnel en étoile avec des tables de faits et des tables de
+            dimension pour permettre des filtres
+            croisés (géographiques, temporels, qualitatifs) performants.</li>
+          <li>Respect d'une charte imposée : palette de bleus, en cohérence avec le sujet de l'eau, sur l'ensemble des
+            visualisations tout en restant accessible au plus grand nombre.</li>
+          <li>Construction de 3 tableaux de bord dédiés pour chaque échelle souhaité (mondial, continental, national)
+            par l'ONG (voir résultats).</li>
+        </ul>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">04 — Résultats &amp; impact</span>
+        <p>
+          Trois tableaux de bord interactifs livrés, chacun modélisé à une echelle différente pour visualiser les
+          domaines d'expertise de
+          DWFA. En ce qui concerne les visualisations, mes choix ont été les suivants :
+        </p>
+        <ul>
+          <li><strong>Création de services :</strong> Un diagramme en barres comparant le % d'accès à l'eau potable et
+            la taux de population urbaine entre chaque région/pays.</li>
+          <li><strong>Modernisation des services :</strong> J'ai choisi une carte à bulles (taille de bulle représentant
+            la taille de la population) colorée en fonction du potentiel d'amélioration des services.</li>
+          <li><strong>Consulting :</strong> Pour ce domaine, j'avais trois variables à analyser. J'ai donc choisi un
+            nuage de points comparant la mortalité à l'accès à l'eau avec une grosseur de point représentant la
+            stabilité politique de la région/du pays.</li>
+        </ul>
+        <p>
+          Mise à disposition d'un support d'aide à la décision concret et fondé sur la donnée, permettant à DWFA de
+          cibler stratégiquement et de justifier ses demandes de financement vers des zones géographiques et des
+          domaines d'intervention précis.
+        </p>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">05 — Limites &amp; pistes</span>
+        <p>
+          La principale limite concerne les données elles-mêmes : le taux de mortalité liée à
+          l'eau insalubre n'est disponible que pour l'année 2016, ce qui empêche de suivre son
+          évolution récente contrairement aux autres indicateurs. La variable de qualité des
+          services présente également de nombreuses valeurs manquantes selon les pays, ce qui
+          limite la précision de l'analyse. Une piste d'amélioration évoquée en soutenance :
+          disposer de plus de nuances dans la qualité des services (au-delà du simple "basique
+          vs qualité") permettrait de mieux distinguer les pays réellement en manque
+          d'infrastructures de ceux qui ont surtout un potentiel d'amélioration à exploiter —
+          deux besoins différents qui appellent des réponses différentes de la part de DWFA.
+        </p>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Zied Belhocine — Data Analyst · <a href="index.html#projets">← Tous les projets</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

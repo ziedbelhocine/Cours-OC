@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rapport mensuel e-commerce — Le Grand Marché — Portfolio Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">zied-belhocine.github.io</a>
+      <nav>
+        <a href="index.html#projets">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="fiche-header wrap">
+      <a class="back" href="index.html#projets">← Retour aux projets</a>
+      <h1>Rapport mensuel e-commerce — Le Grand Marché (storytelling data)</h1>
+      <div class="fiche-meta">
+        <span class="tag">Excel</span>
+        <span class="tag">Python</span>
+        <span class="tag">Data Storytelling</span>
+        <span class="tag">Analyse univariée</span>
+        <span class="tag">Reporting</span>
+      </div>
+    </div>
+
+    <style>
+      .fiche-visual img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+
+    <div class="wrap">
+      <div class="fiche-visual">
+        <img src="static/grandmarche.png" alt="Capture d'écran de l'application Le Grand Marché" />
+      </div>
+    </div>
+
+    <div class="fiche-header wrap">
+      <a href="https://github.com/ziedbelhocine/Cours-OC/tree/master/Data_Analyst/Projet_2" target="_blank"
+        rel="noopener noreferrer" class="btn btn-github">
+        <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"
+          style="vertical-align: text-bottom; margin-right: 8px;">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+        Ouvrir le projet sur GitHub
+      </a>
+    </div>
+
+    <div class="wrap">
+
+      <section class="fiche-section">
+        <span class="label">01 — Contexte / besoin métier</span>
+        <p>
+          Mission réalisée en tant que Data Analyst au service Marketing du Grand Marché,
+          entreprise de grande distribution (nourriture, biens de consommation, ex-high tech)
+          vendant en ligne avec livraison à domicile. Le directeur Marketing avait besoin de
+          deux livrables pour la présentation de fin de semaine devant la direction : un
+          rapport mensuel de 5 slides expliquant la baisse du chiffre d'affaires malgré une
+          hausse des ventes, et un tableau de bord Excel sur les clients affiliés préparé pour
+          une collègue du pôle Marketing. Contrainte forte : rester concis (5 slides max, un
+          graphique par slide), accessible à un public non technique, et proposer un axe
+          stratégique.
+        </p>
+      </section>
+
+
+      <section class="fiche-section">
+        <span class="label">02 — Données</span>
+        <ul>
+          <li><strong>Source :</strong> graphiques déjà générés automatiquement par script pour le rapport mensuel ;
+            données brutes de transactions des clients affiliés (février) pour le tableau de bord Excel, à intégrer à
+            une trame déjà partiellement complétée par la collègue.</li>
+          <li><strong>Contexte business clé :</strong> l'entreprise avait arrêté le segment High Tech l'année précédente
+            pour se recentrer sur la nourriture et les biens de consommation — élément essentiel pour interpréter
+            correctement l'évolution du CA.</li>
+          <li><strong>Volumétrie tableau de bord :</strong> suivi de ~60 clients affiliés sur 6 mois (septembre à
+            février), avec détail par catégorie et par transaction.</li>
+        </ul>
+      </section>
+
+
+      <section class="fiche-section">
+        <span class="label">03 — Démarche</span>
+        <ul>
+          <li>Parti pris narratif volontaire pour le rapport mensuel : construction d'un fil "enquête policière" (le CA
+            qui baisse malgré des ventes en hausse comme un "crime" à élucider), avec une slide dédiée par indice — taux
+            de conversion, temps passé sur le site, panier moyen — avant de révéler le "coupable" en dernière slide. Un
+            choix risqué mais assumé pour rendre un rapport de gestion mémorable devant une direction non technique.
+          </li>
+          <li>Sélection stricte de 5 graphiques parmi ceux déjà générés, pour respecter la contrainte de concision
+            imposée — exercice de hiérarchisation de l'information autant que d'analyse.</li>
+          <li>Calcul de métriques dérivées pour étayer chaque slide : taux de conversion (ventes/visites), variance du
+            temps passé sur le site par session d'achat, corrélation visuelle entre temps passé et panier moyen.</li>
+          <li>Sur le tableau de bord Excel : construction de 5 graphiques dont une infographie, mise à jour des formules
+            (transactions, chiffre d'affaires, temps d'achat moyen) en conservant les formules actives et création d'un
+            tableau croisé dynamique résumant achats et CA par client et par catégorie.</li>
+          <li>Application des bonnes pratiques d'accessibilité sur les deux livrables (contrastes, lisibilité).</li>
+        </ul>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">04 — Résultats &amp; impact</span>
+        <ul>
+          <li><strong>Mise en évidence d'un paradoxe :</strong> Détection d'une décorrélation entre l'augmentation du
+            nombre de transactions et la baisse du chiffre d'affaires sur la période.</li>
+          <li><strong>Analyse des performances de vente :</strong> Évaluation de l'évolution du taux de conversion,
+            révélant que l'acquisition de clients croît plus rapidement que la capacité du site à transformer ces
+            visites en achats.</li>
+          <li><strong>Étude comportementale et financière :</strong> Mise en lumière de la corrélation entre le temps de
+            navigation et la valeur du panier moyen, démontrant que la tendance à la baisse du temps de session impacte
+            négativement les montants dépensés.</li>
+          <li><strong>Le vrai coupable identifié :</strong> Isolement de la cause racine expliquant la chute des revenus
+            (la suppression d'un segment de produits clé), contrastant avec les performances de croissance et de
+            stabilité des autres catégories du catalogue.</li>
+          <li><strong>Suivi des performances d'affiliation :</strong> Complétion du tableau de bord dédié aux clients
+            affiliés, permettant de calculer le chiffre d'affaires par catégorie de produits et d'identifier
+            individuellement les clients les plus fidèles.</li>
+          <li><strong>Axe stratégique recommandé :</strong> Formulation d'un plan d'action ciblant le développement des
+            catégories porteuses et préconisant une nouvelle segmentation de la base clients pour capter plus
+            efficacement les profils à fort panier moyen.</li>
+        </ul>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">05 — Limites &amp; pistes</span>
+        <p>
+          Ce projet reste volontairement simple dans son analyse — l'essentiel du travail
+          portait sur la sélection et la mise en récit de graphiques déjà générés, plutôt que
+          sur une analyse statistique poussée. Le format imposé (5 slides, un graphique par
+          slide, graphiques déjà produits en amont) laissait aussi peu de marge de manœuvre pour
+          explorer les données au-delà de ce cadre, ce qui a limité la profondeur d'analyse
+          possible malgré l'angle narratif choisi pour compenser côté forme.
+        </p>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Zied Belhocine — Data Analyst · <a href="index.html#projets">← Tous les projets</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

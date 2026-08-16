@@ -1,0 +1,501 @@
+/* ==========================================================================
+   PORTFOLIO — feuille de style partagée
+   Système : palette "rapport", serif d'accroche + sans-serif de lecture +
+   mono pour tout ce qui est donnée (tags, dates, métriques).
+   ========================================================================== */
+
+:root {
+  /* Couleurs */
+  --paper:      #FAF9F5;
+  --paper-alt:  #F0EEE6;
+  --ink:        #1C1F24;
+  --ink-soft:   #5B616B;
+  --line:       #DBD7CC;
+  --teal:       #2C6E6E;
+  --teal-dark:  #1B4747;
+  --amber:      #B9860F;
+
+  /* Typo */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "IBM Plex Sans", -apple-system, Segoe UI, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+  /* Rythme */
+  --max-w: 880px;
+  --gutter: clamp(20px, 5vw, 48px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: var(--teal-dark); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--teal); }
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+}
+
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.15; margin: 0; }
+
+p { margin: 0 0 1em; color: var(--ink); }
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal-dark);
+  background: var(--paper-alt);
+  border: 1px solid var(--line);
+  padding: 3px 9px;
+  border-radius: 3px;
+}
+
+/* --------------------------------------------------------------------
+   Motif signature : une règle "graduée", comme un axe de graphique,
+   utilisée pour séparer les sections du document.
+   -------------------------------------------------------------------- */
+.ruler {
+  height: 10px;
+  margin: 0;
+  border: none;
+  background-image: repeating-linear-gradient(
+    to right,
+    var(--line) 0, var(--line) 1px,
+    transparent 1px, transparent 24px
+  );
+  background-position: bottom;
+  background-size: 100% 10px;
+  background-repeat: repeat-x;
+}
+
+/* --------------------------------------------------------------------
+   Structure générale
+   -------------------------------------------------------------------- */
+.wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+header.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(250, 249, 245, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-nav .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.site-nav .brand {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-nav nav {
+  display: flex;
+  gap: 24px;
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+}
+
+.site-nav nav a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+.site-nav nav a:hover,
+.site-nav nav a[aria-current="page"] {
+  color: var(--teal-dark);
+}
+
+/* --------------------------------------------------------------------
+   Hero
+   -------------------------------------------------------------------- */
+.hero {
+  padding: 64px 0 40px;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 5.2vw, 52px);
+  max-width: 14ch;
+}
+
+.hero .role {
+  font-family: var(--font-mono);
+  color: var(--teal-dark);
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+}
+
+.hero p.lede {
+  max-width: 56ch;
+  color: var(--ink-soft);
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.hero .links {
+  margin-top: 22px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+/* --------------------------------------------------------------------
+   Bandeau de métriques — le "tableau de bord" en une ligne
+   -------------------------------------------------------------------- */
+.stat-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-top: 8px;
+}
+
+.stat-strip .stat {
+  flex: 1 1 160px;
+  padding: 18px var(--gutter);
+  border-right: 1px solid var(--line);
+  text-align: center;
+}
+.stat-strip .stat:last-child { border-right: none; }
+
+.stat .num {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  color: var(--ink);
+  display: block;
+}
+.stat .label {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* --------------------------------------------------------------------
+   Sections
+   -------------------------------------------------------------------- */
+section.block {
+  padding: 52px 0;
+}
+
+section.block > .eyebrow {
+  margin-bottom: 14px;
+}
+
+section.block h2 {
+  font-size: clamp(24px, 3vw, 30px);
+  margin-bottom: 10px;
+}
+
+section.block > p.intro {
+  color: var(--ink-soft);
+  max-width: 60ch;
+  margin-bottom: 28px;
+}
+
+/* --------------------------------------------------------------------
+   Section "À propos" — texte + photo
+   -------------------------------------------------------------------- */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: start;
+}
+
+.about-photo {
+  width: 220px;
+  height: 275px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 640px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-photo {
+    width: 160px;
+    height: 200px;
+    justify-self: start;
+  }
+}
+
+/* --------------------------------------------------------------------
+   Index des projets — cartes "phares" + liste compacte
+   -------------------------------------------------------------------- */
+.project-featured {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 18px;
+  padding: 22px;
+  background: var(--paper-alt);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.project-card:hover {
+  border-color: var(--teal);
+  transform: translateY(-1px);
+}
+
+.project-card .idx {
+  font-family: var(--font-mono);
+  color: var(--amber);
+  font-size: 14px;
+  padding-top: 3px;
+}
+
+.project-card h3 {
+  font-size: 19px;
+  margin-bottom: 6px;
+}
+
+.project-card .desc {
+  color: var(--ink-soft);
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--teal-dark);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+.project-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+}
+
+.project-list li {
+  border-bottom: 1px solid var(--line);
+}
+
+.project-list a {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 13px 4px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.project-list a:hover .title { color: var(--teal-dark); }
+
+.project-list .idx {
+  font-family: var(--font-mono);
+  color: var(--ink-soft);
+  font-size: 13px;
+  width: 26px;
+  flex-shrink: 0;
+}
+
+.project-list .title {
+  flex: 1;
+  font-weight: 500;
+}
+
+.project-list .meta {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------
+   Fiche projet (page individuelle)
+   -------------------------------------------------------------------- */
+.fiche-header {
+  padding: 48px 0 24px;
+}
+
+.fiche-header .back {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.fiche-header h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin: 16px 0 12px;
+  max-width: 20ch;
+}
+
+.fiche-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.fiche-visual {
+  margin: 8px 0 6px;
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  background: var(--paper-alt);
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  text-align: center;
+  padding: 20px;
+}
+
+.fiche-section {
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.fiche-section:last-of-type { border-bottom: none; }
+
+.fiche-section .label {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--amber);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.fiche-section h2 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.fiche-section ul {
+  margin: 0 0 1em;
+  padding-left: 1.2em;
+}
+.fiche-section li { margin-bottom: 6px; }
+
+/* --------------------------------------------------------------------
+   Veille — tables de sources / outils
+   -------------------------------------------------------------------- */
+.veille-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.veille-table th, .veille-table td {
+  text-align: left;
+  padding: 11px 10px;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.veille-table th {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+/* --------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------- */
+footer.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 32px 0 48px;
+  margin-top: 24px;
+}
+
+footer.site-footer p {
+  color: var(--ink-soft);
+  font-size: 13.5px;
+  font-family: var(--font-mono);
+}
+
+/* --------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  .site-nav nav { gap: 14px; }
+  .stat-strip .stat { flex: 1 1 50%; border-right: none; border-bottom: 1px solid var(--line); }
+  .project-card { grid-template-columns: 1fr; }
+  .project-card .idx { padding-top: 0; }
+}
+
+.btn-github {
+  display: inline-block;
+  background-color: #24292e;
+  color: #ffffff;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-github:hover {
+  background-color: #0366d6;
+  /* Devient bleu au survol */
+  color: #ffffff;
+}

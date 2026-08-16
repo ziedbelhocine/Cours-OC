@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veille — Portfolio Data</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">zied-belhocine.github.io</a>
+    <nav>
+      <a href="index.html#projets">Projets</a>
+      <a href="veille.html" aria-current="page">Veille</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="fiche-header wrap">
+    <a class="back" href="index.html">← Retour à l'accueil</a>
+    <h1>Veille métier &amp; technologique</h1>
+    <p class="lede" style="margin-top:12px; color:var(--ink-soft); max-width:60ch;">
+      Plutôt que de suivre l'ensemble du paysage data, j'ai choisi de concentrer ma veille
+      sur trois axes directement liés à ma pratique : Python pour l'analyse de données,
+      Power BI pour la restitution et la sécurité des données. L'objectif est de rester à jour sur des sources fiables
+      et pédagogiques, pas de tout suivre superficiellement.
+    </p>
+  </div>
+
+  <div class="wrap">
+
+    <section class="fiche-section">
+      <span class="label">Outils &amp; méthodes identifiés</span>
+      <h2>Ce que je suis pour rester à jour techniquement</h2>
+      <p style="color:var(--ink-soft); margin-bottom:14px;">
+        Je suis abonné aux flux RSS des notes de version des principales librairies Python
+        que j'utilise en analyse de données, pour être informé des nouvelles fonctionnalités
+        et des changements qui peuvent affecter mes projets. je suis également le site de la 
+        CNIL pour rester informé des évolutions légales et réglementaires en matière de protection des données.
+      </p>
+      <table class="veille-table">
+        <thead>
+          <tr>
+            <th>Outil</th>
+            <th>Ce que je suis</th>
+            <th>Pourquoi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pandas</td>
+            <td>Flux RSS des notes de version (release notes)</td>
+            <td>Librairie centrale de mes projets — rester informé des évolutions d'API et des dépréciations</td>
+          </tr>
+          <tr>
+            <td>NumPy</td>
+            <td>Flux RSS des notes de version</td>
+            <td>Base de calcul numérique sous-jacente à Pandas et aux librairies de visualisation</td>
+          </tr>
+          <tr>
+            <td>Matplotlib / Seaborn</td>
+            <td>Flux RSS des notes de version</td>
+            <td>Librairies de visualisation utilisées sur la majorité de mes projets d'analyse</td>
+          </tr>
+          <tr>
+            <td>Sécurité des données</td>
+            <td>Site de la CNIL</td>
+            <td>Suivi des évolutions légales et réglementaires.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="fiche-section">
+      <span class="label">Sources suivies</span>
+      <h2>Créateurs et chaînes que je suis</h2>
+      <table class="veille-table">
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Axe</th>
+            <th>Format</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Machine Learnia</td>
+            <td>Python &amp; data science</td>
+            <td>YouTube (FR)</td>
+          </tr>
+          <tr>
+            <td>Docstring</td>
+            <td>Python &amp; data science</td>
+            <td>YouTube (FR)</td>
+          </tr>
+          <tr>
+            <td>Nicolas Rangeon</td>
+            <td>Python &amp; data science</td>
+            <td>YouTube (FR)</td>
+          </tr>
+          <tr>
+            <td>Elliott Pierret</td>
+            <td>Power BI</td>
+            <td>YouTube (FR)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="fiche-section">
+      <span class="label">Critères de sélection</span>
+      <h2>Comment je choisis mes sources</h2>
+      <ul>
+        <li><strong>Pédagogie et clarté :</strong> je privilégie les créateurs qui expliquent le "pourquoi" derrière une technique, pas seulement le "comment" — c'est ce qui permet de réutiliser ensuite le concept dans un contexte différent.</li>
+        <li><strong>Récence de publication :</strong> je vérifie que la source publie régulièrement, pour m'assurer que le contenu reflète les versions actuelles des outils et pas des pratiques obsolètes. Je consulte aussi souvent les commentaires sous les vidéos, où d'autres praticiens partagent des retours d'expérience ou des bonnes pratiques complémentaires au contenu principal.</li>
+      </ul>
+    </section>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Zied Belhocine — Data Analyst · <a href="index.html">← Accueil</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

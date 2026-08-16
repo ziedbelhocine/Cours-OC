@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Étude de marché international — Portfolio Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">zied-belhocine.github.io</a>
+      <nav>
+        <a href="index.html#projets">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="fiche-header wrap">
+      <a class="back" href="index.html#projets">← Retour aux projets</a>
+      <h1>Étude de marché international — La Poule qui chante (ACP + Clustering)</h1>
+      <div class="fiche-meta">
+        <span class="tag">Python</span>
+        <span class="tag">ACP</span>
+        <span class="tag">Clustering (CAH / K-means)</span>
+        <span class="tag">Analyse PESTEL</span>
+        <span class="tag">Sources multiples</span>
+      </div>
+    </div>
+
+    <style>
+      .fiche-visual img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+
+    <div class="wrap">
+      <div class="fiche-visual">
+        <img src="static/poulequichante.png" alt="Capture d'écran de l'application lapoulequichante" />
+      </div>
+    </div>
+
+    <div class="fiche-header wrap">
+      <a href="https://github.com/ziedbelhocine/Cours-OC/tree/master/Data_Analyst/Projet_11" target="_blank"
+        rel="noopener noreferrer" class="btn btn-github">
+        <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"
+          style="vertical-align: text-bottom; margin-right: 8px;">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+        Ouvrir le projet sur GitHub
+      </a>
+    </div>
+
+    <div class="wrap">
+
+      <section class="fiche-section">
+        <span class="label">01 — Contexte / besoin métier</span>
+        <p>
+          Mission réalisée pour La Poule qui chante, entreprise française d'agroalimentaire
+          spécialisée dans le poulet bio. Le PDG souhaitait évaluer une expansion à
+          l'international, sans aucune contrainte de pays ou de continent définie au départ.
+          L'objectif : identifier des groupements de pays pertinents à cibler pour l'export,
+          à présenter au COMEX dans un format accessible à un public non technique.
+        </p>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">02 — Données</span>
+        <ul>
+          <li><strong>Source de départ :</strong> données New Food Balances de la FAO, fournies par le commanditaire.
+          </li>
+          <li><strong>Enrichissement via analyse PESTEL :</strong> 9 variables construites à partir de sources
+            complémentaires (FAO, Banque mondiale, Our World in Data) couvrant les 5 dimensions PESTEL — score de
+            polarisation politique, PIB par habitant, IDH, population, import et consommation de poulet par habitant,
+            indice de performance logistique (LPI), accès à l'électricité, distance à la France.</li>
+          <li><strong>Volumétrie finale :</strong> 143 pays retenus après nettoyage, couvrant 7,57 milliards de
+            personnes.</li>
+          <li><strong>Feature engineering :</strong> 3 variables recalculées en ratios par habitant (PIB, import et
+            consommation de poulet), pour rendre les pays comparables indépendamment de leur taille.</li>
+        </ul>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">03 — Démarche</span>
+        <ul>
+          <li>Collecte et fusion de plusieurs sources de données hétérogènes, harmonisées sur un référentiel commun de
+            noms de pays.</li>
+          <li>Analyse en Composantes Principales (ACP) pour réduire la dimensionnalité : l'axe F1 (39,2 % d'inertie)
+            synthétise le niveau de développement économique et les importations de poulet ; l'axe F2 (15,3 %) capture
+            la taille du pays, la consommation et la stabilité politique.</li>
+          <li>Classification Ascendante Hiérarchique (CAH, méthode de Ward) : dendrogramme découpé en 5 clusters (36,
+            28, 2, 45 et 32 pays). Vérification par tableau croisé que les clusters ne correspondent pas aux continents
+            — signe que le niveau de développement pèse plus que la proximité géographique ou culturelle dans le
+            regroupement.</li>
+          <li>K-means en complément, avec méthode du coude pour choisir le nombre de clusters (3 retenus).</li>
+          <li>Croisement des deux méthodes : extraction des pays présents à la fois dans le meilleur cluster de la CAH
+            et celui du K-means, pour ne retenir que les recommandations robustes aux deux approches.</li>
+        </ul>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">04 — Résultats &amp; impact</span>
+        <p>
+          <strong>Ciblage géographique par algorithme :</strong> L'intersection de deux méthodes de clustering a permis
+          d'isoler une sélection restreinte de pays prioritaires. Ces marchés se caractérisent par un niveau de
+          développement élevé, des infrastructures de base optimales et d'excellentes performances logistiques,
+          garantissant ainsi une chaîne d'approvisionnement fiable.
+        </p>
+        <p>
+          <strong>Analyse de la maturité de la demande :</strong> Au sein de cette sélection, l'étude a mis en évidence
+          un sous-groupe de pays affichant une consommation de produits importés nettement supérieure à la moyenne. Cet
+          indicateur valide la pertinence de cibler des marchés déjà réceptifs aux importations, limitant ainsi les
+          risques liés à l'évangélisation d'un nouveau marché.
+        </p>
+        <p>
+          <strong>Recommandation stratégique au COMEX :</strong> Présentation d'un plan d'action préconisant de
+          prioriser la performance logistique et la présence d'importation de poulet. Cette approche, guidée par la
+          donnée, a permis de démontrer qu'il était plus rentable d'écarter les pays très peuplés mais à forte
+          consommation de
+          poulet, ces derniers ne répondant pas aux critères de viabilité croisés identifiés par les modèles.
+        </p>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">05 — Limites &amp; pistes</span>
+        <ul>
+          <li>L'ACP est sensible aux valeurs extrêmes et ne capture que les relations linéaires entre variables — une
+            méthode non linéaire comme le t-SNE pourrait affiner l'analyse, comme évoqué en soutenance.</li>
+          <li>Les clusters ne correspondant pas aux continents est un résultat contre-intuitif intéressant, mais qui
+            mériterait d'être creusé : est-ce un vrai signal économique, ou un effet du choix des variables PESTEL
+            retenues ?</li>
+          <li>La variable de distance à la France (critère écologique) pèse peu dans le résultat final — des pays
+            éloignés comme l'Australie ou la Corée du Sud restent recommandés malgré la logique de proximité évoquée en
+            préconisation. Si la proximité est réellement une priorité stratégique, elle devrait être pondérée plus
+            fortement dans une itération future.</li>
+        </ul>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Zied Belhocine — Data Analyst · <a href="index.html#projets">← Tous les projets</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

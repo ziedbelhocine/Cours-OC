@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimisez la gestion des données d'une boutique — Portfolio Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">zied-belhocine.github.io</a>
+      <nav>
+        <a href="index.html#projets">Projets</a>
+        <a href="veille.html">Veille</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="fiche-header wrap">
+      <a class="back" href="index.html#projets">← Retour aux projets</a>
+      <h1>Optimisez la gestion des données d'une boutique — BottleNeck</h1>
+      <div class="fiche-meta">
+        <span class="tag">Python</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">Nettoyage de données</span>
+        <span class="tag">Détection d'anomalies</span>
+        <span class="tag">Analyse Pareto</span>
+      </div>
+    </div>
+
+    <style>
+      .fiche-visual img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+
+    <div class="wrap">
+      <div class="fiche-visual">
+        <img src="static/bottleneck.png" alt="Capture d'écran de l'application BottleNeck" />
+      </div>
+    </div>
+
+    <div class="fiche-header wrap">
+      <a href="https://github.com/ziedbelhocine/Cours-OC/tree/master/Data_Analyst/Projet_6" target="_blank"
+        rel="noopener noreferrer" class="btn btn-github">
+        <svg height="20" width="20" viewBox="0 0 16 16" fill="currentColor"
+          style="vertical-align: text-bottom; margin-right: 8px;">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+          </path>
+        </svg>
+        Ouvrir le projet sur GitHub
+      </a>
+    </div>
+
+
+    <div class="wrap">
+
+      <section class="fiche-section">
+        <span class="label">01 — Contexte / besoin métier</span>
+        <p>
+          Mission réalisée pour BottleNeck, marchand de vin, dont les outils de suivi étaient
+          encore artisanaux : trois sources de données disjointes (extraction ERP, extraction
+          du site web, table de liaison entre les deux systèmes dont les références ne
+          correspondaient pas). Deux livrables étaient attendus : une base de données consolidée et fiabilisée,
+          et une analyse complète (CA, stocks, marges) restituée devant le comité
+          de direction — avec un accent particulier sur la formalisation des erreurs trouvées,
+          ce rapport devant servir de point de départ à un futur projet de data visualisation.
+        </p>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">02 — Données</span>
+        <ul>
+          <li><strong>Source :</strong> 3 fichiers à rapprocher — export ERP (référence produit, prix, état du stock),
+            export du site web (SKU, quantités vendues, description produit), et une table de liaison entre les deux
+            référentiels, mise à jour par un stagiaire.</li>
+          <li><strong>Période :</strong> extraction au 31 octobre, ventes couvrant le 1ᵉʳ au 31 octobre.</li>
+          <li><strong>Qualité :</strong> de nombreuses incohérences à traiter avant fusion — doublons sur la colonne de
+            liaison <code>id_web</code> (dus à des valeurs vides comptées comme identiques par défaut), formats de SKU
+            incohérents entre les 3 sources, valeurs manquantes à traiter avant même de pouvoir vérifier les doublons.
+          </li>
+        </ul>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">03 — Démarche</span>
+        <ul>
+          <li>Analyse exploratoire indépendante de chacune des 3 sources avant fusion, pour identifier les anomalies
+            propres à chaque système (erreurs de saisie, de type, de calcul, de jointure).</li>
+          <li>Nettoyage ciblé de la variable SKU — formats incohérents
+            entre l'export web et l'ERP, nécessitant plusieurs passes de nettoyage successives.</li>
+          <li>Fusion des 3 tables sur des clés choisies et justifiées.</li>
+          <li>Détection des valeurs aberrantes sur le prix par deux méthodes complémentaires : Z-score (seuil à 3
+            écarts-types) et écart interquartile (IQR), avec visualisation en boxplot pour objectiver la décision de
+            conserver ou corriger chaque valeur.</li>
+          <li>Calcul des indicateurs métier demandés : chiffre d'affaires par produit et total, analyse Pareto (20/80)
+            sur les ventes et le CA, taux de marge par catégorie, rotation des stocks en mois de couverture.</li>
+          <li>Analyse de corrélation entre variables quantitatives (prix, stock, ventes, marge) pour dégager des
+            enseignements transversaux.</li>
+          <li>Mise en forme des résultats et structuration du rapport de présentation.</li>
+        </ul>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">04 — Résultats &amp; impact</span>
+        <ul>
+          <li><strong>Analyse du chiffre d'affaires :</strong>Calcul du CA mensuel global et mise en évidence des
+            catégories de produits dominant le classement des meilleures ventes.</li>
+          <li><strong>Étude de répartition (Loi de Pareto)</strong> Vérification de la concentration des performances,
+            illustrant précisément quelle proportion restreinte de références génère la vaste majorité du chiffre
+            d'affaires et des volumes écoulés.</li>
+          <li><strong>Audit des stocks et des rotations</strong> Évaluation des volumes de sortie face à la valorisation
+            globale du stock. Cette analyse a permis d'isoler les références les moins performantes ("flops") afin de
+            mettre en place un suivi sur le moyen terme.</li>
+          <li><strong>Détection d'anomalies :</strong> Identification statistique des valeurs atypiques ("outliers")
+            dans les prix, déclenchant une alerte pour vérifier et ajuster manuellement la stratégie tarifaire.</li>
+          <li><strong>Analyse de rentabilité par catégorie :</strong> Comparaison des taux de marge, permettant d'isoler
+            les segments de produits les plus lucratifs afin d'orienter les futurs efforts de vente.</li>
+          <li><strong>Matrice de corrélations :</strong> Mise en lumière des dynamiques de vente croisées (impact du
+            niveau de stock sur les ventes, influence du prix sur la demande, et relation entre stock et prix).</li>
+          <li><strong>Plan d'action et recommandations :</strong> Livraison d'une feuille de route opérationnelle visant
+            à optimiser la gestion des approvisionnements (sécuriser les "tops", déstocker les "flops"), comprendre les
+            causes de surstock, et affiner le pilotage financier en calculant la rentabilité nette par article.</li>
+        </ul>
+      </section>
+
+      <section class="fiche-section">
+        <span class="label">05 — Limites &amp; pistes</span>
+        <ul>
+          <li>L'analyse porte sur un seul mois de données (octobre) — les catégories identifiées comme "flops"
+            nécessitent une observation sur une période plus longue avant d'être confirmées comme telles.</li>
+          <li>Le traitement de la variable SKU et des doublons issus de l'extraction web a été la partie la plus
+            difficile du projet — un dictionnaire de données partagé entre l'ERP et le site web, avec des noms de
+            colonnes harmonisés dès la source, éviterait une bonne partie de ce travail de réconciliation en aval.</li>
+          <li>Le contrôle de la qualité des données a été fait de façon largement manuelle. Une évolution naturelle
+            serait d'automatiser ces vérifications via des scripts Python exécutés à chaque import — doublons, valeurs
+            aberrantes ou manquantes — plutôt que de les revérifier à la main à chaque nouvelle livraison de données.
+          </li>
+          <li>Axes de montée en compétence identifiés : visualisations avancées avec Plotly Express, et statistiques
+            plus poussées (heatmaps de corrélation, test du Chi²) pour aller au-delà des analyses univariées réalisées
+            ici.</li>
+        </ul>
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Zied Belhocine — Data Analyst · <a href="index.html#projets">← Tous les projets</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

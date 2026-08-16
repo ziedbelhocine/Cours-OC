@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zied Belhocine — Portfolio Data</title>
+<meta name="description" content="Portfolio de projets data : contexte, démarche, résultats et veille technologique.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">zied-belhocine.github.io</a>
+    <nav>
+      <a href="index.html#projets">Projets</a>
+      <a href="veille.html">Veille</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap">
+    <span class="role">Data Analyst</span>
+    <h1>Zied Belhocine — de la donnée à la décision.</h1>
+    <p class="lede">
+      Portfolio de mes projets data réalisés en formation (OpenClassrooms) et à titre
+      personnel. Chaque fiche détaille le projet ainsi : contexte,
+      données, démarche, résultats, limites.
+    </p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/zied-belhocine-b0743b125/">LinkedIn ↗</a>
+      <a href="https://github.com/ziedbelhocine">GitHub ↗</a>
+      <a href="CV_Zied_Belhocine.pdf">CV (PDF) ↓</a>
+    </div>
+  </section>
+
+  <div class="stat-strip wrap" style="padding-left:0; padding-right:0;">
+    <div class="stat">
+      <span class="num">Projets présentés</span>
+      <span class="label">11</span>
+    </div>
+    <div class="stat">
+      <span class="num">Formation Data Analyst Openclassrooms</span>
+      <span class="label">En cours</span>
+    </div>
+    <div class="stat">
+      <span class="num">Outils principaux</span>
+      <span class="label">Python · SQL · Power BI</span>
+    </div>
+    <div class="stat">
+      <span class="num">Dernière mise à jour</span>
+      <span class="label">Août 2026</span>
+    </div>
+  </div>
+
+    <!-- ============ À PROPOS ============ -->
+  <section class="block wrap">
+    <span class="eyebrow">À propos</span>
+    <h2>Qui suis-je</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="intro" style="max-width:62ch;">
+          Après douze ans dans la grande distribution chez IKEA — dont quatre ans à manager deux équipes et
+          à piloter la performance commerciale d'un rayon — j'ai choisi de me réorienter vers
+          l'analyse de données. Ce qui m'a toujours porté dans mes fonctions précédentes, c'est
+          la même chose que ce qui me porte aujourd'hui : comprendre ce qui se cache derrière les
+          chiffres pour aider une équipe à prendre de meilleures décisions. La formation Data
+          Analyst chez OpenClassrooms m'a donné les outils techniques (Python, SQL, Power BI,
+          DBT) pour transformer cette curiosité en compétence concrète.
+        </p>
+        <p class="intro" style="max-width:62ch;">
+          J'ai souvent une approche scolaire : je pars du cadre qu'on me donne et je
+          cherche à y répondre entiièrement. C'est ma curiosité qui me pousse ensuite à en
+          sortir — creuser plus loin que ce qui était demandé, tester une piste
+          complémentaire, comprendre le "pourquoi" derrière une méthode plutôt que de
+          l'appliquer telle quelle. C'est aussi ce qui m'a amené à construire Lolprono avec des
+          amis : au-delà de l'exercice technique, j'aime que ce que je fabrique serve
+          concrètement à quelqu'un. Ce portfolio réunit les projets qui en témoignent.
+        </p>
+      </div>
+      <img class="about-photo" src="static/photo-zied.jpg" alt="Photo de Zied Belhocine" width="220" height="275">
+    </div>
+  </section>
+
+  <!-- ============ PROJETS ============ -->
+  <section class="block wrap" id="projets">
+    <span class="eyebrow">Projets</span>
+    <h2>Mise en pratique des compétences</h2>
+    <p class="intro">
+      Sélection : Mes projets les plus représentatifs apparaissent en premier,
+      puis l'ensemble de mes réalisations. Chaque titre ouvre une fiche détaillée.
+    </p>
+
+    <!-- Projets phares -->
+    <div class="project-featured">
+
+      <a class="project-card" href="projet-lolprono.html">
+        <span class="idx">01</span>
+        <div>
+          <h3>Lolprono — webapp de pronostics League of Legends</h3>
+          <p class="desc">
+            Projet personnel développé en équipe, utilisé régulièrement par le
+            groupe d'amis pour lequel il a été créé.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">SQLite</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="projet-faux-billets.html">
+        <span class="idx">02</span>
+        <div>
+          <h3>Détectez des faux billets avec R ou Python</h3>
+          <p class="desc">
+            Distinguer les vrais des faux billets à partir de leurs
+            caractéristiques dimensionnelles, via un modèle de classification.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">Classification</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="projet-powerbi-sanitoral.html">
+        <span class="idx">03</span>
+        <div>
+          <h3>Créez un tableau de bord dynamique avec Power BI</h3>
+          <p class="desc">
+            Suivi dynamique de l'avancement de projets, pensé pour une équipe
+            non technique.
+          </p>
+          <div class="tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="projet-lapage.html">
+        <span class="idx">04</span>
+        <div>
+          <h3>Analysez les ventes d'une librairie avec R ou Python</h3>
+          <p class="desc">
+            Analyse des indicateurs de vente et du comportement client pour la
+            librairie en ligne Lapage, restituée en comité de direction.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Statistiques</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="project-card" href="projet-sociodemographie-dbt.html">
+        <span class="idx">05</span>
+        <div>
+          <h3>Analysez l'évolution de profils sociodémographiques avec DBT</h3>
+          <p class="desc">
+            Pipeline DBT + Snowflake comparant le profil sociodémographique des
+            étudiants Data à la population INSEE.
+          </p>
+          <div class="tags">
+            <span class="tag">DBT</span>
+            <span class="tag">Snowflake</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+      </a>
+
+
+    </div>
+
+    <!-- Reste des projets, en liste compacte -->
+    <ul class="project-list">
+      <li><a href="projet-marche-international.html"><span class="idx">06</span><span class="title">Produisez une étude de marché avec R ou Python</span><span class="meta">Python · Clustering</span></a></li>
+      <li><a href="projet-sante-publique.html"><span class="idx">07</span><span class="title">Réalisez une étude de santé publique avec R ou Python</span><span class="meta">Python · DataFrames</span></a></li>
+      <li><a href="projet-bottleneck.html"><span class="idx">08</span><span class="title">Optimisez la gestion des données d'une boutique avec R ou Python</span><span class="meta">Python · Analyse univariée</span></a></li>
+      <li><a href="projet-eau-potable.html"><span class="idx">09</span><span class="title">Faites une étude sur l'eau potable</span><span class="meta">Power BI · Dashboards</span></a></li>
+      <li><a href="projet-immo-laplace.html"><span class="idx">10</span><span class="title">Créez et utilisez une base de données immobilière avec SQL</span><span class="meta">SQL · Databricks</span></a></li>
+      <li><a href="projet-ecommerce-legrandmarche.html"><span class="idx">11</span><span class="title">Faites une analyse de ventes pour un e-commerce</span><span class="meta">Excel · Storytelling</span></a></li>
+    </ul>
+  </section>
+
+  <hr class="ruler wrap">
+
+  <!-- ============ VEILLE (aperçu) ============ -->
+  <section class="block wrap">
+    <span class="eyebrow">Veille</span>
+    <h2>Veille métier &amp; technologique</h2>
+    <p class="intro">
+      Outils, méthodes et sources suivis en continu, avec les critères qui ont
+      guidé mes choix sur les projets ci-dessus.
+    </p>
+    <a href="veille.html">Voir la page veille complète →</a>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="wrap">
+    <p>Zied Belhocine — Data Analyst · zied.data@proton.me · Montpellier · Portfolio mis à jour en août 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
